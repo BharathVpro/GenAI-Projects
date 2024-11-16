@@ -34,7 +34,7 @@ os.environ["COHERE_API_KEY"] = os.getenv('COHERE_API_KEY')
 
 
 # UI Title
-st.title("Quiz Bot")
+st.title("Personalized Assessment Bot")
 
 # Initiate LLM Model
 # llm = ChatGroq(model="llama3-8b-8192")
