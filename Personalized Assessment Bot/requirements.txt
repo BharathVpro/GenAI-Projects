@@ -1,0 +1,15 @@
+langchain
+langchain-cohere
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-groq
+unstructured
+regex
+getpass4
+fpdf
+streamlit
+langchain_google_genai
+langchain-fireworks
+yt-dlp
+# subprocess

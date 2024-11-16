@@ -1,0 +1,1752 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:02.270 align:start position:0%
+ 
+welcome<00:00:00.719><c> back</c><00:00:01.079><c> in</c><00:00:01.560><c> this</c><00:00:01.680><c> video</c><00:00:01.800><c> I</c><00:00:02.159><c> will</c>
+
+00:00:02.270 --> 00:00:02.280 align:start position:0%
+welcome back in this video I will
+ 
+
+00:00:02.280 --> 00:00:04.550 align:start position:0%
+welcome back in this video I will
+discuss<00:00:02.580><c> how</c><00:00:03.480><c> to</c><00:00:03.600><c> calculate</c><00:00:04.020><c> the</c><00:00:04.259><c> different</c>
+
+00:00:04.550 --> 00:00:04.560 align:start position:0%
+discuss how to calculate the different
+ 
+
+00:00:04.560 --> 00:00:07.730 align:start position:0%
+discuss how to calculate the different
+performance<00:00:05.400><c> metrics</c><00:00:06.480><c> given</c><00:00:07.140><c> the</c><00:00:07.319><c> confusion</c>
+
+00:00:07.730 --> 00:00:07.740 align:start position:0%
+performance metrics given the confusion
+ 
+
+00:00:07.740 --> 00:00:09.710 align:start position:0%
+performance metrics given the confusion
+Matrix<00:00:08.099><c> for</c><00:00:08.400><c> multi-class</c><00:00:09.059><c> classification</c>
+
+00:00:09.710 --> 00:00:09.720 align:start position:0%
+Matrix for multi-class classification
+ 
+
+00:00:09.720 --> 00:00:10.970 align:start position:0%
+Matrix for multi-class classification
+problem
+
+00:00:10.970 --> 00:00:10.980 align:start position:0%
+problem
+ 
+
+00:00:10.980 --> 00:00:12.650 align:start position:0%
+problem
+in<00:00:11.460><c> this</c><00:00:11.519><c> case</c><00:00:11.639><c> we</c><00:00:11.940><c> have</c><00:00:12.000><c> been</c><00:00:12.179><c> given</c><00:00:12.480><c> a</c>
+
+00:00:12.650 --> 00:00:12.660 align:start position:0%
+in this case we have been given a
+ 
+
+00:00:12.660 --> 00:00:14.690 align:start position:0%
+in this case we have been given a
+confusion<00:00:13.080><c> Matrix</c><00:00:13.440><c> with</c><00:00:13.860><c> the</c><00:00:14.040><c> three</c><00:00:14.219><c> classes</c>
+
+00:00:14.690 --> 00:00:14.700 align:start position:0%
+confusion Matrix with the three classes
+ 
+
+00:00:14.700 --> 00:00:16.970 align:start position:0%
+confusion Matrix with the three classes
+that<00:00:15.000><c> is</c><00:00:15.120><c> class</c><00:00:15.360><c> 1</c><00:00:15.599><c> Class</c><00:00:15.900><c> 2</c><00:00:16.080><c> and</c><00:00:16.320><c> class</c><00:00:16.560><c> 3.</c>
+
+00:00:16.970 --> 00:00:16.980 align:start position:0%
+that is class 1 Class 2 and class 3.
+ 
+
+00:00:16.980 --> 00:00:19.490 align:start position:0%
+that is class 1 Class 2 and class 3.
+given<00:00:17.880><c> this</c><00:00:18.000><c> confusion</c><00:00:18.480><c> Matrix</c><00:00:18.840><c> we</c><00:00:19.199><c> will</c><00:00:19.320><c> try</c>
+
+00:00:19.490 --> 00:00:19.500 align:start position:0%
+given this confusion Matrix we will try
+ 
+
+00:00:19.500 --> 00:00:21.410 align:start position:0%
+given this confusion Matrix we will try
+to<00:00:19.680><c> calculate</c><00:00:20.160><c> the</c><00:00:20.580><c> different</c><00:00:20.760><c> performance</c>
+
+00:00:21.410 --> 00:00:21.420 align:start position:0%
+to calculate the different performance
+ 
+
+00:00:21.420 --> 00:00:22.849 align:start position:0%
+to calculate the different performance
+Matrix<00:00:21.840><c> here</c>
+
+00:00:22.849 --> 00:00:22.859 align:start position:0%
+Matrix here
+ 
+
+00:00:22.859 --> 00:00:25.490 align:start position:0%
+Matrix here
+before<00:00:23.279><c> we</c><00:00:23.580><c> calculate</c><00:00:24.060><c> the</c><00:00:24.500><c> different</c>
+
+00:00:25.490 --> 00:00:25.500 align:start position:0%
+before we calculate the different
+ 
+
+00:00:25.500 --> 00:00:27.589 align:start position:0%
+before we calculate the different
+performance<00:00:26.100><c> Matrix</c><00:00:26.519><c> first</c><00:00:26.939><c> we</c><00:00:27.359><c> need</c><00:00:27.480><c> to</c>
+
+00:00:27.589 --> 00:00:27.599 align:start position:0%
+performance Matrix first we need to
+ 
+
+00:00:27.599 --> 00:00:29.330 align:start position:0%
+performance Matrix first we need to
+convert<00:00:27.960><c> this</c><00:00:28.199><c> particular</c><00:00:28.560><c> multi-class</c>
+
+00:00:29.330 --> 00:00:29.340 align:start position:0%
+convert this particular multi-class
+ 
+
+00:00:29.340 --> 00:00:31.910 align:start position:0%
+convert this particular multi-class
+classification<00:00:30.119><c> problems</c><00:00:31.019><c> confusion</c><00:00:31.500><c> Matrix</c>
+
+00:00:31.910 --> 00:00:31.920 align:start position:0%
+classification problems confusion Matrix
+ 
+
+00:00:31.920 --> 00:00:34.370 align:start position:0%
+classification problems confusion Matrix
+into<00:00:32.340><c> binary</c><00:00:33.000><c> classification</c><00:00:33.840><c> problems</c>
+
+00:00:34.370 --> 00:00:34.380 align:start position:0%
+into binary classification problems
+ 
+
+00:00:34.380 --> 00:00:36.889 align:start position:0%
+into binary classification problems
+confusion<00:00:34.920><c> Matrix</c><00:00:35.280><c> it</c><00:00:36.000><c> looks</c><00:00:36.360><c> something</c><00:00:36.600><c> like</c>
+
+00:00:36.889 --> 00:00:36.899 align:start position:0%
+confusion Matrix it looks something like
+ 
+
+00:00:36.899 --> 00:00:39.530 align:start position:0%
+confusion Matrix it looks something like
+this<00:00:37.079><c> again</c><00:00:37.920><c> I</c><00:00:38.280><c> have</c><00:00:38.399><c> two</c><00:00:38.760><c> classes</c><00:00:39.239><c> on</c><00:00:39.420><c> the</c>
+
+00:00:39.530 --> 00:00:39.540 align:start position:0%
+this again I have two classes on the
+ 
+
+00:00:39.540 --> 00:00:41.569 align:start position:0%
+this again I have two classes on the
+vertical<00:00:39.840><c> axis</c><00:00:40.260><c> predicted</c><00:00:40.800><c> classes</c><00:00:41.219><c> on</c><00:00:41.399><c> the</c>
+
+00:00:41.569 --> 00:00:41.579 align:start position:0%
+vertical axis predicted classes on the
+ 
+
+00:00:41.579 --> 00:00:42.950 align:start position:0%
+vertical axis predicted classes on the
+horizontal<00:00:42.000><c> axis</c><00:00:42.360><c> this</c><00:00:42.719><c> particular</c>
+
+00:00:42.950 --> 00:00:42.960 align:start position:0%
+horizontal axis this particular
+ 
+
+00:00:42.960 --> 00:00:44.750 align:start position:0%
+horizontal axis this particular
+conclusion<00:00:43.440><c> Matrix</c><00:00:43.800><c> contains</c><00:00:44.219><c> two</c><00:00:44.399><c> classes</c>
+
+00:00:44.750 --> 00:00:44.760 align:start position:0%
+conclusion Matrix contains two classes
+ 
+
+00:00:44.760 --> 00:00:46.369 align:start position:0%
+conclusion Matrix contains two classes
+the<00:00:45.000><c> first</c><00:00:45.120><c> class</c><00:00:45.360><c> is</c><00:00:45.600><c> s</c><00:00:45.840><c> and</c><00:00:46.140><c> the</c><00:00:46.260><c> second</c>
+
+00:00:46.369 --> 00:00:46.379 align:start position:0%
+the first class is s and the second
+ 
+
+00:00:46.379 --> 00:00:48.889 align:start position:0%
+the first class is s and the second
+class<00:00:46.680><c> is</c><00:00:46.920><c> no</c><00:00:47.219><c> in</c><00:00:47.460><c> this</c><00:00:47.579><c> vertical</c><00:00:47.940><c> case</c>
+
+00:00:48.889 --> 00:00:48.899 align:start position:0%
+class is no in this vertical case
+ 
+
+00:00:48.899 --> 00:00:51.470 align:start position:0%
+class is no in this vertical case
+now<00:00:49.320><c> if</c><00:00:49.440><c> you</c><00:00:49.559><c> look</c><00:00:49.680><c> at</c><00:00:49.860><c> this</c><00:00:50.039><c> particular</c><00:00:50.340><c> TP</c><00:00:50.820><c> TP</c>
+
+00:00:51.470 --> 00:00:51.480 align:start position:0%
+now if you look at this particular TP TP
+ 
+
+00:00:51.480 --> 00:00:54.470 align:start position:0%
+now if you look at this particular TP TP
+is<00:00:51.719><c> nothing</c><00:00:51.840><c> but</c><00:00:52.079><c> the</c><00:00:52.920><c> number</c><00:00:53.039><c> of</c><00:00:53.399><c> s</c><00:00:53.820><c> examples</c>
+
+00:00:54.470 --> 00:00:54.480 align:start position:0%
+is nothing but the number of s examples
+ 
+
+00:00:54.480 --> 00:00:56.689 align:start position:0%
+is nothing but the number of s examples
+which<00:00:55.020><c> are</c><00:00:55.199><c> classified</c><00:00:55.559><c> as</c><00:00:55.800><c> scr</c><00:00:56.100><c> that</c><00:00:56.640><c> is</c>
+
+00:00:56.689 --> 00:00:56.699 align:start position:0%
+which are classified as scr that is
+ 
+
+00:00:56.699 --> 00:00:58.790 align:start position:0%
+which are classified as scr that is
+nothing<00:00:56.879><c> but</c><00:00:57.180><c> the</c><00:00:57.660><c> true</c><00:00:57.899><c> positive</c><00:00:58.440><c> in</c><00:00:58.620><c> this</c>
+
+00:00:58.790 --> 00:00:58.800 align:start position:0%
+nothing but the true positive in this
+ 
+
+00:00:58.800 --> 00:01:00.709 align:start position:0%
+nothing but the true positive in this
+particular<00:00:59.100><c> case</c><00:00:59.340><c> this</c><00:00:59.760><c> FN</c><00:01:00.120><c> is</c><00:01:00.300><c> nothing</c><00:01:00.480><c> but</c>
+
+00:01:00.709 --> 00:01:00.719 align:start position:0%
+particular case this FN is nothing but
+ 
+
+00:01:00.719 --> 00:01:03.170 align:start position:0%
+particular case this FN is nothing but
+the<00:01:01.500><c> number</c><00:01:01.620><c> of</c><00:01:01.800><c> yes</c><00:01:02.039><c> examples</c><00:01:02.640><c> which</c><00:01:02.940><c> were</c>
+
+00:01:03.170 --> 00:01:03.180 align:start position:0%
+the number of yes examples which were
+ 
+
+00:01:03.180 --> 00:01:04.910 align:start position:0%
+the number of yes examples which were
+classified<00:01:03.539><c> as</c><00:01:03.780><c> no</c><00:01:04.019><c> in</c><00:01:04.199><c> this</c><00:01:04.320><c> case</c><00:01:04.500><c> that</c><00:01:04.799><c> is</c>
+
+00:01:04.910 --> 00:01:04.920 align:start position:0%
+classified as no in this case that is
+ 
+
+00:01:04.920 --> 00:01:07.429 align:start position:0%
+classified as no in this case that is
+nothing<00:01:05.100><c> but</c><00:01:05.400><c> false</c><00:01:05.939><c> negative</c><00:01:06.299><c> in</c><00:01:06.479><c> this</c><00:01:06.600><c> case</c>
+
+00:01:07.429 --> 00:01:07.439 align:start position:0%
+nothing but false negative in this case
+ 
+
+00:01:07.439 --> 00:01:09.109 align:start position:0%
+nothing but false negative in this case
+coming<00:01:07.860><c> back</c><00:01:08.040><c> to</c><00:01:08.220><c> the</c><00:01:08.340><c> third</c><00:01:08.460><c> entry</c><00:01:08.820><c> that</c><00:01:09.000><c> is</c>
+
+00:01:09.109 --> 00:01:09.119 align:start position:0%
+coming back to the third entry that is
+ 
+
+00:01:09.119 --> 00:01:11.810 align:start position:0%
+coming back to the third entry that is
+FP<00:01:09.600><c> that</c><00:01:10.200><c> is</c><00:01:10.320><c> nothing</c><00:01:10.500><c> but</c><00:01:10.740><c> the</c><00:01:11.159><c> number</c><00:01:11.280><c> of</c><00:01:11.460><c> no</c>
+
+00:01:11.810 --> 00:01:11.820 align:start position:0%
+FP that is nothing but the number of no
+ 
+
+00:01:11.820 --> 00:01:14.510 align:start position:0%
+FP that is nothing but the number of no
+examples<00:01:12.360><c> which</c><00:01:12.780><c> are</c><00:01:12.900><c> classified</c><00:01:13.320><c> as</c><00:01:13.619><c> s</c><00:01:13.979><c> or</c>
+
+00:01:14.510 --> 00:01:14.520 align:start position:0%
+examples which are classified as s or
+ 
+
+00:01:14.520 --> 00:01:16.609 align:start position:0%
+examples which are classified as s or
+you<00:01:14.640><c> can</c><00:01:14.820><c> say</c><00:01:14.939><c> that</c><00:01:15.119><c> wrongly</c><00:01:15.659><c> predicted</c><00:01:16.439><c> over</c>
+
+00:01:16.609 --> 00:01:16.619 align:start position:0%
+you can say that wrongly predicted over
+ 
+
+00:01:16.619 --> 00:01:17.390 align:start position:0%
+you can say that wrongly predicted over
+here
+
+00:01:17.390 --> 00:01:17.400 align:start position:0%
+here
+ 
+
+00:01:17.400 --> 00:01:20.149 align:start position:0%
+here
+coming<00:01:17.939><c> back</c><00:01:18.180><c> to</c><00:01:18.299><c> the</c><00:01:18.479><c> last</c><00:01:18.600><c> one</c><00:01:18.780><c> that</c><00:01:19.140><c> is</c><00:01:19.260><c> T</c><00:01:19.979><c> N</c>
+
+00:01:20.149 --> 00:01:20.159 align:start position:0%
+coming back to the last one that is T N
+ 
+
+00:01:20.159 --> 00:01:22.190 align:start position:0%
+coming back to the last one that is T N
+T<00:01:20.640><c> N</c><00:01:20.820><c> is</c><00:01:21.000><c> nothing</c><00:01:21.180><c> but</c><00:01:21.420><c> the</c><00:01:21.600><c> number</c><00:01:21.780><c> of</c><00:01:21.960><c> no</c>
+
+00:01:22.190 --> 00:01:22.200 align:start position:0%
+T N is nothing but the number of no
+ 
+
+00:01:22.200 --> 00:01:24.890 align:start position:0%
+T N is nothing but the number of no
+examples<00:01:22.759><c> predicted</c><00:01:23.759><c> as</c><00:01:24.060><c> no</c><00:01:24.240><c> over</c><00:01:24.479><c> here</c><00:01:24.600><c> or</c>
+
+00:01:24.890 --> 00:01:24.900 align:start position:0%
+examples predicted as no over here or
+ 
+
+00:01:24.900 --> 00:01:27.050 align:start position:0%
+examples predicted as no over here or
+classified<00:01:25.259><c> as</c><00:01:25.500><c> no</c><00:01:25.740><c> that</c><00:01:26.220><c> is</c><00:01:26.340><c> nothing</c><00:01:26.460><c> but</c><00:01:26.759><c> the</c>
+
+00:01:27.050 --> 00:01:27.060 align:start position:0%
+classified as no that is nothing but the
+ 
+
+00:01:27.060 --> 00:01:28.670 align:start position:0%
+classified as no that is nothing but the
+true<00:01:27.240><c> negative</c><00:01:27.659><c> in</c><00:01:27.960><c> this</c><00:01:28.080><c> particular</c><00:01:28.439><c> case</c>
+
+00:01:28.670 --> 00:01:28.680 align:start position:0%
+true negative in this particular case
+ 
+
+00:01:28.680 --> 00:01:30.890 align:start position:0%
+true negative in this particular case
+again<00:01:29.460><c> if</c><00:01:30.000><c> you</c><00:01:30.119><c> look</c><00:01:30.240><c> at</c><00:01:30.360><c> this</c><00:01:30.540><c> particular</c>
+
+00:01:30.890 --> 00:01:30.900 align:start position:0%
+again if you look at this particular
+ 
+
+00:01:30.900 --> 00:01:33.830 align:start position:0%
+again if you look at this particular
+thing<00:01:31.080><c> TP</c><00:01:31.680><c> and</c><00:01:31.920><c> TN</c><00:01:32.460><c> are</c><00:01:32.759><c> correctly</c><00:01:33.420><c> classified</c>
+
+00:01:33.830 --> 00:01:33.840 align:start position:0%
+thing TP and TN are correctly classified
+ 
+
+00:01:33.840 --> 00:01:37.010 align:start position:0%
+thing TP and TN are correctly classified
+or<00:01:34.140><c> predicted</c><00:01:34.680><c> FP</c><00:01:35.520><c> and</c><00:01:35.700><c> FN</c><00:01:36.060><c> are</c><00:01:36.360><c> incorrectly</c>
+
+00:01:37.010 --> 00:01:37.020 align:start position:0%
+or predicted FP and FN are incorrectly
+ 
+
+00:01:37.020 --> 00:01:39.050 align:start position:0%
+or predicted FP and FN are incorrectly
+predicted<00:01:37.560><c> or</c><00:01:37.920><c> classified</c><00:01:38.460><c> in</c><00:01:38.759><c> this</c><00:01:38.880><c> case</c>
+
+00:01:39.050 --> 00:01:39.060 align:start position:0%
+predicted or classified in this case
+ 
+
+00:01:39.060 --> 00:01:41.810 align:start position:0%
+predicted or classified in this case
+first<00:01:39.540><c> we</c><00:01:39.960><c> will</c><00:01:40.140><c> convert</c><00:01:40.500><c> this</c><00:01:40.820><c> multi-class</c>
+
+00:01:41.810 --> 00:01:41.820 align:start position:0%
+first we will convert this multi-class
+ 
+
+00:01:41.820 --> 00:01:44.330 align:start position:0%
+first we will convert this multi-class
+classification<00:01:42.600><c> conclusion</c><00:01:43.380><c> Matrix</c><00:01:43.799><c> into</c>
+
+00:01:44.330 --> 00:01:44.340 align:start position:0%
+classification conclusion Matrix into
+ 
+
+00:01:44.340 --> 00:01:47.630 align:start position:0%
+classification conclusion Matrix into
+binary<00:01:45.119><c> confusion</c><00:01:45.659><c> Matrix</c><00:01:46.079><c> and</c><00:01:46.920><c> then</c><00:01:47.159><c> we</c><00:01:47.460><c> will</c>
+
+00:01:47.630 --> 00:01:47.640 align:start position:0%
+binary confusion Matrix and then we will
+ 
+
+00:01:47.640 --> 00:01:49.190 align:start position:0%
+binary confusion Matrix and then we will
+calculate<00:01:48.060><c> the</c><00:01:48.420><c> different</c><00:01:48.540><c> performance</c>
+
+00:01:49.190 --> 00:01:49.200 align:start position:0%
+calculate the different performance
+ 
+
+00:01:49.200 --> 00:01:51.350 align:start position:0%
+calculate the different performance
+Matrix<00:01:49.680><c> now</c><00:01:50.460><c> the</c><00:01:50.700><c> question</c><00:01:50.820><c> comes</c><00:01:51.119><c> in</c><00:01:51.240><c> point</c>
+
+00:01:51.350 --> 00:01:51.360 align:start position:0%
+Matrix now the question comes in point
+ 
+
+00:01:51.360 --> 00:01:53.690 align:start position:0%
+Matrix now the question comes in point
+of<00:01:51.600><c> us</c><00:01:51.780><c> is</c><00:01:51.960><c> how</c><00:01:52.259><c> to</c><00:01:52.439><c> convert</c><00:01:52.799><c> this</c><00:01:52.979><c> multi-class</c>
+
+00:01:53.690 --> 00:01:53.700 align:start position:0%
+of us is how to convert this multi-class
+ 
+
+00:01:53.700 --> 00:01:55.370 align:start position:0%
+of us is how to convert this multi-class
+classification<00:01:54.240><c> confusion</c><00:01:54.780><c> Matrix</c><00:01:55.079><c> into</c>
+
+00:01:55.370 --> 00:01:55.380 align:start position:0%
+classification confusion Matrix into
+ 
+
+00:01:55.380 --> 00:01:57.590 align:start position:0%
+classification confusion Matrix into
+binary<00:01:56.280><c> classification</c><00:01:56.880><c> configuration</c>
+
+00:01:57.590 --> 00:01:57.600 align:start position:0%
+binary classification configuration
+ 
+
+00:01:57.600 --> 00:01:59.990 align:start position:0%
+binary classification configuration
+Matrix<00:01:58.380><c> that</c><00:01:58.920><c> can</c><00:01:59.040><c> be</c><00:01:59.220><c> done</c><00:01:59.399><c> something</c><00:01:59.759><c> like</c>
+
+00:01:59.990 --> 00:02:00.000 align:start position:0%
+Matrix that can be done something like
+ 
+
+00:02:00.000 --> 00:02:00.889 align:start position:0%
+Matrix that can be done something like
+this
+
+00:02:00.889 --> 00:02:00.899 align:start position:0%
+this
+ 
+
+00:02:00.899 --> 00:02:03.109 align:start position:0%
+this
+what<00:02:01.439><c> we</c><00:02:01.560><c> need</c><00:02:01.680><c> to</c><00:02:01.799><c> do</c><00:02:01.920><c> here</c><00:02:02.159><c> is</c><00:02:02.399><c> first</c><00:02:02.759><c> we</c><00:02:02.939><c> will</c>
+
+00:02:03.109 --> 00:02:03.119 align:start position:0%
+what we need to do here is first we will
+ 
+
+00:02:03.119 --> 00:02:06.649 align:start position:0%
+what we need to do here is first we will
+consider<00:02:03.479><c> this</c><00:02:03.780><c> class</c><00:02:04.200><c> 1</c><00:02:04.560><c> as</c><00:02:05.040><c> the</c><00:02:05.820><c> S</c><00:02:06.060><c> examples</c>
+
+00:02:06.649 --> 00:02:06.659 align:start position:0%
+consider this class 1 as the S examples
+ 
+
+00:02:06.659 --> 00:02:08.870 align:start position:0%
+consider this class 1 as the S examples
+and<00:02:07.200><c> remaining</c><00:02:07.680><c> these</c><00:02:07.920><c> two</c><00:02:08.039><c> that</c><00:02:08.220><c> is</c><00:02:08.340><c> class</c><00:02:08.640><c> 2</c>
+
+00:02:08.870 --> 00:02:08.880 align:start position:0%
+and remaining these two that is class 2
+ 
+
+00:02:08.880 --> 00:02:11.330 align:start position:0%
+and remaining these two that is class 2
+and<00:02:09.179><c> 3</c><00:02:09.420><c> will</c><00:02:09.840><c> be</c><00:02:10.020><c> considered</c><00:02:10.440><c> as</c><00:02:10.560><c> no</c><00:02:10.860><c> examples</c>
+
+00:02:11.330 --> 00:02:11.340 align:start position:0%
+and 3 will be considered as no examples
+ 
+
+00:02:11.340 --> 00:02:13.729 align:start position:0%
+and 3 will be considered as no examples
+and<00:02:12.060><c> then</c><00:02:12.239><c> we</c><00:02:12.660><c> will</c><00:02:12.840><c> get</c><00:02:12.959><c> only</c><00:02:13.140><c> two</c><00:02:13.379><c> classes</c>
+
+00:02:13.729 --> 00:02:13.739 align:start position:0%
+and then we will get only two classes
+ 
+
+00:02:13.739 --> 00:02:16.850 align:start position:0%
+and then we will get only two classes
+here<00:02:13.920><c> that</c><00:02:14.220><c> is</c><00:02:14.400><c> class</c><00:02:14.640><c> 1</c><00:02:14.879><c> as</c><00:02:15.420><c> yes</c><00:02:15.720><c> Class</c><00:02:16.140><c> 2</c><00:02:16.379><c> 3</c><00:02:16.560><c> as</c>
+
+00:02:16.850 --> 00:02:16.860 align:start position:0%
+here that is class 1 as yes Class 2 3 as
+ 
+
+00:02:16.860 --> 00:02:19.130 align:start position:0%
+here that is class 1 as yes Class 2 3 as
+no<00:02:17.099><c> in</c><00:02:17.340><c> this</c><00:02:17.459><c> case</c><00:02:17.640><c> now</c><00:02:18.480><c> once</c><00:02:18.780><c> you</c><00:02:18.840><c> get</c><00:02:18.959><c> that</c>
+
+00:02:19.130 --> 00:02:19.140 align:start position:0%
+no in this case now once you get that
+ 
+
+00:02:19.140 --> 00:02:21.110 align:start position:0%
+no in this case now once you get that
+particular<00:02:19.500><c> thing</c><00:02:19.800><c> you</c><00:02:20.220><c> will</c><00:02:20.400><c> get</c><00:02:20.580><c> the</c>
+
+00:02:21.110 --> 00:02:21.120 align:start position:0%
+particular thing you will get the
+ 
+
+00:02:21.120 --> 00:02:22.670 align:start position:0%
+particular thing you will get the
+conversion<00:02:21.720><c> Matrix</c><00:02:22.020><c> something</c><00:02:22.200><c> like</c><00:02:22.500><c> this</c>
+
+00:02:22.670 --> 00:02:22.680 align:start position:0%
+conversion Matrix something like this
+ 
+
+00:02:22.680 --> 00:02:26.869 align:start position:0%
+conversion Matrix something like this
+one<00:02:23.580><c> is</c><00:02:23.760><c> yes</c><00:02:24.000><c> here</c><00:02:24.300><c> and</c><00:02:24.900><c> 2</c><00:02:25.319><c> 3</c><00:02:25.560><c> as</c><00:02:25.980><c> considered</c><00:02:26.700><c> as</c>
+
+00:02:26.869 --> 00:02:26.879 align:start position:0%
+one is yes here and 2 3 as considered as
+ 
+
+00:02:26.879 --> 00:02:28.190 align:start position:0%
+one is yes here and 2 3 as considered as
+no<00:02:27.060><c> in</c><00:02:27.360><c> this</c><00:02:27.420><c> case</c>
+
+00:02:28.190 --> 00:02:28.200 align:start position:0%
+no in this case
+ 
+
+00:02:28.200 --> 00:02:30.170 align:start position:0%
+no in this case
+now<00:02:28.920><c> if</c><00:02:29.280><c> you</c><00:02:29.400><c> look</c><00:02:29.520><c> at</c><00:02:29.700><c> this</c><00:02:29.879><c> particular</c>
+
+00:02:30.170 --> 00:02:30.180 align:start position:0%
+now if you look at this particular
+ 
+
+00:02:30.180 --> 00:02:33.290 align:start position:0%
+now if you look at this particular
+conversion<00:02:30.660><c> Matrix</c><00:02:31.020><c> the</c><00:02:31.860><c> number</c><00:02:32.040><c> of</c><00:02:32.400><c> class</c><00:02:32.940><c> 1</c>
+
+00:02:33.290 --> 00:02:33.300 align:start position:0%
+conversion Matrix the number of class 1
+ 
+
+00:02:33.300 --> 00:02:35.510 align:start position:0%
+conversion Matrix the number of class 1
+examples<00:02:33.840><c> which</c><00:02:34.200><c> were</c><00:02:34.379><c> predicted</c><00:02:34.860><c> as</c><00:02:34.980><c> one</c><00:02:35.220><c> in</c>
+
+00:02:35.510 --> 00:02:35.520 align:start position:0%
+examples which were predicted as one in
+ 
+
+00:02:35.520 --> 00:02:37.430 align:start position:0%
+examples which were predicted as one in
+this<00:02:35.640><c> case</c><00:02:35.819><c> is</c><00:02:36.000><c> eight</c><00:02:36.180><c> here</c><00:02:36.480><c> so</c><00:02:36.900><c> that</c><00:02:37.080><c> is</c><00:02:37.200><c> what</c>
+
+00:02:37.430 --> 00:02:37.440 align:start position:0%
+this case is eight here so that is what
+ 
+
+00:02:37.440 --> 00:02:39.110 align:start position:0%
+this case is eight here so that is what
+I<00:02:37.560><c> have</c><00:02:37.680><c> written</c><00:02:37.920><c> as</c><00:02:38.099><c> a</c><00:02:38.280><c> true</c><00:02:38.459><c> positive</c><00:02:38.940><c> in</c>
+
+00:02:39.110 --> 00:02:39.120 align:start position:0%
+I have written as a true positive in
+ 
+
+00:02:39.120 --> 00:02:42.290 align:start position:0%
+I have written as a true positive in
+this<00:02:39.239><c> case</c><00:02:39.420><c> this</c><00:02:40.080><c> 2</c><00:02:40.319><c> and</c><00:02:40.560><c> 0</c><00:02:40.920><c> they</c><00:02:41.580><c> are</c><00:02:41.760><c> of</c><00:02:42.000><c> type</c>
+
+00:02:42.290 --> 00:02:42.300 align:start position:0%
+this case this 2 and 0 they are of type
+ 
+
+00:02:42.300 --> 00:02:45.290 align:start position:0%
+this case this 2 and 0 they are of type
+class<00:02:42.780><c> 1</c><00:02:43.019><c> but</c><00:02:43.860><c> they</c><00:02:44.040><c> were</c><00:02:44.220><c> classified</c><00:02:44.640><c> as</c><00:02:44.879><c> 2</c><00:02:45.060><c> 3</c>
+
+00:02:45.290 --> 00:02:45.300 align:start position:0%
+class 1 but they were classified as 2 3
+ 
+
+00:02:45.300 --> 00:02:47.030 align:start position:0%
+class 1 but they were classified as 2 3
+here<00:02:45.480><c> the</c><00:02:45.780><c> meaning</c><00:02:45.900><c> of</c><00:02:46.140><c> this</c><00:02:46.260><c> one</c><00:02:46.379><c> is</c><00:02:46.560><c> there</c><00:02:46.800><c> of</c>
+
+00:02:47.030 --> 00:02:47.040 align:start position:0%
+here the meaning of this one is there of
+ 
+
+00:02:47.040 --> 00:02:48.710 align:start position:0%
+here the meaning of this one is there of
+type<00:02:47.160><c> yes</c><00:02:47.400><c> examples</c><00:02:48.000><c> but</c><00:02:48.360><c> they</c><00:02:48.540><c> were</c>
+
+00:02:48.710 --> 00:02:48.720 align:start position:0%
+type yes examples but they were
+ 
+
+00:02:48.720 --> 00:02:50.509 align:start position:0%
+type yes examples but they were
+classified<00:02:49.080><c> as</c><00:02:49.319><c> no</c><00:02:49.560><c> that</c><00:02:49.980><c> is</c><00:02:50.099><c> nothing</c><00:02:50.220><c> but</c>
+
+00:02:50.509 --> 00:02:50.519 align:start position:0%
+classified as no that is nothing but
+ 
+
+00:02:50.519 --> 00:02:52.430 align:start position:0%
+classified as no that is nothing but
+false<00:02:50.940><c> negative</c><00:02:51.300><c> that</c><00:02:51.840><c> is</c><00:02:51.959><c> what</c><00:02:52.200><c> I</c><00:02:52.379><c> have</c>
+
+00:02:52.430 --> 00:02:52.440 align:start position:0%
+false negative that is what I have
+ 
+
+00:02:52.440 --> 00:02:53.750 align:start position:0%
+false negative that is what I have
+written<00:02:52.680><c> here</c>
+
+00:02:53.750 --> 00:02:53.760 align:start position:0%
+written here
+ 
+
+00:02:53.760 --> 00:02:56.089 align:start position:0%
+written here
+coming<00:02:54.300><c> back</c><00:02:54.480><c> to</c><00:02:54.720><c> these</c><00:02:55.019><c> two</c><00:02:55.140><c> examples</c><00:02:55.560><c> if</c><00:02:55.980><c> you</c>
+
+00:02:56.089 --> 00:02:56.099 align:start position:0%
+coming back to these two examples if you
+ 
+
+00:02:56.099 --> 00:02:58.250 align:start position:0%
+coming back to these two examples if you
+consider<00:02:56.400><c> these</c><00:02:56.640><c> two</c><00:02:56.760><c> examples</c><00:02:57.239><c> these</c><00:02:58.140><c> two</c>
+
+00:02:58.250 --> 00:02:58.260 align:start position:0%
+consider these two examples these two
+ 
+
+00:02:58.260 --> 00:03:00.110 align:start position:0%
+consider these two examples these two
+are<00:02:58.440><c> of</c><00:02:58.560><c> type</c><00:02:58.739><c> 2</c><00:02:58.920><c> 3</c><00:02:59.160><c> that</c><00:02:59.400><c> is</c><00:02:59.519><c> nothing</c><00:02:59.640><c> but</c><00:02:59.879><c> no</c>
+
+00:03:00.110 --> 00:03:00.120 align:start position:0%
+are of type 2 3 that is nothing but no
+ 
+
+00:03:00.120 --> 00:03:02.270 align:start position:0%
+are of type 2 3 that is nothing but no
+examples<00:03:00.660><c> but</c><00:03:01.379><c> they</c><00:03:01.560><c> were</c><00:03:01.680><c> classified</c><00:03:02.040><c> as</c>
+
+00:03:02.270 --> 00:03:02.280 align:start position:0%
+examples but they were classified as
+ 
+
+00:03:02.280 --> 00:03:03.770 align:start position:0%
+examples but they were classified as
+class<00:03:02.459><c> one</c><00:03:02.640><c> that</c><00:03:02.879><c> is</c><00:03:03.000><c> nothing</c><00:03:03.120><c> but</c><00:03:03.360><c> yes</c><00:03:03.540><c> here</c>
+
+00:03:03.770 --> 00:03:03.780 align:start position:0%
+class one that is nothing but yes here
+ 
+
+00:03:03.780 --> 00:03:06.229 align:start position:0%
+class one that is nothing but yes here
+that<00:03:04.080><c> is</c><00:03:04.200><c> nothing</c><00:03:04.319><c> but</c><00:03:04.620><c> false</c><00:03:05.099><c> positive</c><00:03:05.519><c> false</c>
+
+00:03:06.229 --> 00:03:06.239 align:start position:0%
+that is nothing but false positive false
+ 
+
+00:03:06.239 --> 00:03:08.630 align:start position:0%
+that is nothing but false positive false
+positive<00:03:06.540><c> will</c><00:03:06.660><c> become</c><00:03:06.900><c> 2</c><00:03:07.080><c> here</c><00:03:07.739><c> and</c><00:03:08.280><c> these</c>
+
+00:03:08.630 --> 00:03:08.640 align:start position:0%
+positive will become 2 here and these
+ 
+
+00:03:08.640 --> 00:03:11.690 align:start position:0%
+positive will become 2 here and these
+four<00:03:08.760><c> examples</c><00:03:09.360><c> are</c><00:03:10.019><c> of</c><00:03:10.319><c> type</c><00:03:10.560><c> you</c><00:03:11.340><c> can</c><00:03:11.459><c> say</c>
+
+00:03:11.690 --> 00:03:11.700 align:start position:0%
+four examples are of type you can say
+ 
+
+00:03:11.700 --> 00:03:14.030 align:start position:0%
+four examples are of type you can say
+that<00:03:11.940><c> two</c><00:03:12.659><c> three</c><00:03:12.959><c> and</c><00:03:13.260><c> they</c><00:03:13.440><c> were</c><00:03:13.620><c> classified</c>
+
+00:03:14.030 --> 00:03:14.040 align:start position:0%
+that two three and they were classified
+ 
+
+00:03:14.040 --> 00:03:16.070 align:start position:0%
+that two three and they were classified
+as<00:03:14.280><c> two</c><00:03:14.459><c> three</c><00:03:14.700><c> here</c><00:03:14.879><c> the</c><00:03:15.239><c> meaning</c><00:03:15.420><c> is</c><00:03:15.720><c> they</c>
+
+00:03:16.070 --> 00:03:16.080 align:start position:0%
+as two three here the meaning is they
+ 
+
+00:03:16.080 --> 00:03:18.410 align:start position:0%
+as two three here the meaning is they
+were<00:03:16.260><c> classified</c><00:03:16.620><c> correctly</c><00:03:17.220><c> and</c><00:03:17.819><c> it</c><00:03:18.060><c> is</c><00:03:18.180><c> true</c>
+
+00:03:18.410 --> 00:03:18.420 align:start position:0%
+were classified correctly and it is true
+ 
+
+00:03:18.420 --> 00:03:20.030 align:start position:0%
+were classified correctly and it is true
+negative<00:03:18.840><c> here</c><00:03:19.019><c> which</c><00:03:19.319><c> is</c><00:03:19.379><c> equivalent</c><00:03:19.800><c> to</c><00:03:19.860><c> 18</c>
+
+00:03:20.030 --> 00:03:20.040 align:start position:0%
+negative here which is equivalent to 18
+ 
+
+00:03:20.040 --> 00:03:22.610 align:start position:0%
+negative here which is equivalent to 18
+in<00:03:20.340><c> this</c><00:03:20.519><c> case</c><00:03:20.640><c> now</c><00:03:21.180><c> I</c><00:03:21.360><c> will</c><00:03:21.480><c> consider</c><00:03:21.840><c> 2</c><00:03:22.260><c> as</c>
+
+00:03:22.610 --> 00:03:22.620 align:start position:0%
+in this case now I will consider 2 as
+ 
+
+00:03:22.620 --> 00:03:24.229 align:start position:0%
+in this case now I will consider 2 as
+the<00:03:23.040><c> class</c><00:03:23.220><c> s</c>
+
+00:03:24.229 --> 00:03:24.239 align:start position:0%
+the class s
+ 
+
+00:03:24.239 --> 00:03:26.330 align:start position:0%
+the class s
+and<00:03:24.780><c> then</c><00:03:24.900><c> remaining</c><00:03:25.319><c> two</c><00:03:25.440><c> that</c><00:03:25.680><c> is</c><00:03:25.800><c> 1</c><00:03:25.980><c> and</c><00:03:26.159><c> 3</c>
+
+00:03:26.330 --> 00:03:26.340 align:start position:0%
+and then remaining two that is 1 and 3
+ 
+
+00:03:26.340 --> 00:03:28.790 align:start position:0%
+and then remaining two that is 1 and 3
+as<00:03:26.700><c> the</c><00:03:26.940><c> class</c><00:03:27.060><c> no</c><00:03:27.360><c> and</c><00:03:27.900><c> then</c><00:03:28.019><c> I</c><00:03:28.200><c> will</c><00:03:28.319><c> try</c><00:03:28.500><c> to</c>
+
+00:03:28.790 --> 00:03:28.800 align:start position:0%
+as the class no and then I will try to
+ 
+
+00:03:28.800 --> 00:03:30.830 align:start position:0%
+as the class no and then I will try to
+come<00:03:29.220><c> up</c><00:03:29.340><c> with</c><00:03:29.519><c> the</c><00:03:29.760><c> confusion</c><00:03:30.300><c> Matrix</c><00:03:30.599><c> for</c>
+
+00:03:30.830 --> 00:03:30.840 align:start position:0%
+come up with the confusion Matrix for
+ 
+
+00:03:30.840 --> 00:03:33.170 align:start position:0%
+come up with the confusion Matrix for
+binary<00:03:31.260><c> classification</c><00:03:31.860><c> now</c><00:03:32.640><c> if</c><00:03:32.819><c> you</c><00:03:32.879><c> look</c><00:03:33.000><c> at</c>
+
+00:03:33.170 --> 00:03:33.180 align:start position:0%
+binary classification now if you look at
+ 
+
+00:03:33.180 --> 00:03:35.270 align:start position:0%
+binary classification now if you look at
+this<00:03:33.420><c> particular</c><00:03:33.659><c> Matrix</c><00:03:34.080><c> again</c><00:03:34.319><c> the</c><00:03:35.159><c> number</c>
+
+00:03:35.270 --> 00:03:35.280 align:start position:0%
+this particular Matrix again the number
+ 
+
+00:03:35.280 --> 00:03:38.030 align:start position:0%
+this particular Matrix again the number
+of<00:03:35.580><c> two</c><00:03:36.060><c> examples</c><00:03:36.540><c> or</c><00:03:37.200><c> class</c><00:03:37.440><c> two</c><00:03:37.680><c> examples</c>
+
+00:03:38.030 --> 00:03:38.040 align:start position:0%
+of two examples or class two examples
+ 
+
+00:03:38.040 --> 00:03:40.009 align:start position:0%
+of two examples or class two examples
+which<00:03:38.340><c> are</c><00:03:38.519><c> predicted</c><00:03:39.000><c> as</c><00:03:39.180><c> two</c><00:03:39.360><c> are</c><00:03:39.540><c> nine</c><00:03:39.840><c> here</c>
+
+00:03:40.009 --> 00:03:40.019 align:start position:0%
+which are predicted as two are nine here
+ 
+
+00:03:40.019 --> 00:03:41.809 align:start position:0%
+which are predicted as two are nine here
+so<00:03:40.260><c> that</c><00:03:40.440><c> is</c><00:03:40.500><c> what</c><00:03:40.739><c> you</c><00:03:40.860><c> can</c><00:03:40.980><c> notice</c><00:03:41.220><c> here</c><00:03:41.459><c> and</c>
+
+00:03:41.809 --> 00:03:41.819 align:start position:0%
+so that is what you can notice here and
+ 
+
+00:03:41.819 --> 00:03:43.490 align:start position:0%
+so that is what you can notice here and
+I<00:03:41.940><c> have</c><00:03:42.060><c> written</c><00:03:42.299><c> it</c><00:03:42.480><c> here</c><00:03:42.780><c> that</c><00:03:43.080><c> is</c><00:03:43.200><c> true</c>
+
+00:03:43.490 --> 00:03:43.500 align:start position:0%
+I have written it here that is true
+ 
+
+00:03:43.500 --> 00:03:45.770 align:start position:0%
+I have written it here that is true
+positive<00:03:43.920><c> in</c><00:03:44.099><c> this</c><00:03:44.220><c> case</c><00:03:44.879><c> if</c><00:03:45.360><c> you</c><00:03:45.480><c> look</c><00:03:45.599><c> at</c>
+
+00:03:45.770 --> 00:03:45.780 align:start position:0%
+positive in this case if you look at
+ 
+
+00:03:45.780 --> 00:03:47.390 align:start position:0%
+positive in this case if you look at
+these<00:03:46.019><c> two</c><00:03:46.080><c> numbers</c><00:03:46.260><c> that</c><00:03:46.620><c> is</c><00:03:46.739><c> one</c><00:03:46.920><c> and</c><00:03:47.099><c> zero</c>
+
+00:03:47.390 --> 00:03:47.400 align:start position:0%
+these two numbers that is one and zero
+ 
+
+00:03:47.400 --> 00:03:50.030 align:start position:0%
+these two numbers that is one and zero
+they<00:03:47.640><c> are</c><00:03:47.819><c> of</c><00:03:47.940><c> type</c><00:03:48.239><c> Class</c><00:03:48.659><c> 2</c><00:03:48.959><c> but</c><00:03:49.620><c> they</c><00:03:49.860><c> were</c>
+
+00:03:50.030 --> 00:03:50.040 align:start position:0%
+they are of type Class 2 but they were
+ 
+
+00:03:50.040 --> 00:03:51.830 align:start position:0%
+they are of type Class 2 but they were
+classified<00:03:50.519><c> or</c><00:03:50.819><c> predicted</c><00:03:51.299><c> as</c><00:03:51.420><c> one</c><00:03:51.659><c> three</c>
+
+00:03:51.830 --> 00:03:51.840 align:start position:0%
+classified or predicted as one three
+ 
+
+00:03:51.840 --> 00:03:53.630 align:start position:0%
+classified or predicted as one three
+year<00:03:52.019><c> the</c><00:03:52.319><c> meaning</c><00:03:52.440><c> is</c><00:03:52.680><c> it</c><00:03:52.920><c> is</c><00:03:53.099><c> a</c><00:03:53.280><c> false</c>
+
+00:03:53.630 --> 00:03:53.640 align:start position:0%
+year the meaning is it is a false
+ 
+
+00:03:53.640 --> 00:03:55.430 align:start position:0%
+year the meaning is it is a false
+negative<00:03:54.060><c> in</c><00:03:54.239><c> this</c><00:03:54.420><c> case</c>
+
+00:03:55.430 --> 00:03:55.440 align:start position:0%
+negative in this case
+ 
+
+00:03:55.440 --> 00:03:56.869 align:start position:0%
+negative in this case
+and<00:03:55.799><c> if</c><00:03:55.920><c> you</c><00:03:56.040><c> look</c><00:03:56.159><c> at</c><00:03:56.280><c> these</c><00:03:56.519><c> two</c><00:03:56.700><c> numbers</c>
+
+00:03:56.869 --> 00:03:56.879 align:start position:0%
+and if you look at these two numbers
+ 
+
+00:03:56.879 --> 00:03:59.750 align:start position:0%
+and if you look at these two numbers
+that<00:03:57.360><c> is</c><00:03:57.540><c> this</c><00:03:58.500><c> two</c><00:03:58.680><c> and</c><00:03:58.860><c> these</c><00:03:59.099><c> two</c><00:03:59.220><c> they</c><00:03:59.580><c> are</c>
+
+00:03:59.750 --> 00:03:59.760 align:start position:0%
+that is this two and these two they are
+ 
+
+00:03:59.760 --> 00:04:02.089 align:start position:0%
+that is this two and these two they are
+of<00:03:59.879><c> type</c><00:04:00.180><c> 1</c><00:04:00.780><c> and</c><00:04:00.959><c> 3</c><00:04:01.140><c> that</c><00:04:01.319><c> is</c><00:04:01.440><c> nothing</c><00:04:01.560><c> but</c><00:04:01.860><c> no</c>
+
+00:04:02.089 --> 00:04:02.099 align:start position:0%
+of type 1 and 3 that is nothing but no
+ 
+
+00:04:02.099 --> 00:04:04.789 align:start position:0%
+of type 1 and 3 that is nothing but no
+examples<00:04:02.640><c> but</c><00:04:03.360><c> they</c><00:04:03.540><c> were</c><00:04:03.720><c> predicted</c><00:04:04.200><c> as</c><00:04:04.379><c> to</c>
+
+00:04:04.789 --> 00:04:04.799 align:start position:0%
+examples but they were predicted as to
+ 
+
+00:04:04.799 --> 00:04:06.470 align:start position:0%
+examples but they were predicted as to
+here<00:04:05.099><c> that</c><00:04:05.280><c> is</c><00:04:05.459><c> nothing</c><00:04:05.580><c> but</c><00:04:05.819><c> yes</c><00:04:06.060><c> in</c><00:04:06.360><c> this</c>
+
+00:04:06.470 --> 00:04:06.480 align:start position:0%
+here that is nothing but yes in this
+ 
+
+00:04:06.480 --> 00:04:08.869 align:start position:0%
+here that is nothing but yes in this
+case<00:04:06.659><c> so</c><00:04:07.260><c> it</c><00:04:07.379><c> is</c><00:04:07.500><c> nothing</c><00:04:07.680><c> but</c><00:04:07.980><c> false</c><00:04:08.459><c> positive</c>
+
+00:04:08.869 --> 00:04:08.879 align:start position:0%
+case so it is nothing but false positive
+ 
+
+00:04:08.879 --> 00:04:12.530 align:start position:0%
+case so it is nothing but false positive
+here<00:04:09.180><c> and</c><00:04:09.959><c> these</c><00:04:10.379><c> four</c><00:04:10.560><c> this</c><00:04:11.099><c> is</c><00:04:11.220><c> eight</c><00:04:11.819><c> zero</c>
+
+00:04:12.530 --> 00:04:12.540 align:start position:0%
+here and these four this is eight zero
+ 
+
+00:04:12.540 --> 00:04:16.729 align:start position:0%
+here and these four this is eight zero
+one<00:04:13.500><c> and</c><00:04:13.739><c> seven</c><00:04:14.040><c> they</c><00:04:14.939><c> are</c><00:04:15.120><c> of</c><00:04:15.239><c> type</c><00:04:15.599><c> 1</c><00:04:15.959><c> 3</c><00:04:16.260><c> and</c>
+
+00:04:16.729 --> 00:04:16.739 align:start position:0%
+one and seven they are of type 1 3 and
+ 
+
+00:04:16.739 --> 00:04:18.890 align:start position:0%
+one and seven they are of type 1 3 and
+they<00:04:16.919><c> were</c><00:04:17.100><c> classified</c><00:04:17.579><c> as</c><00:04:17.820><c> 1</c><00:04:17.940><c> 3</c><00:04:18.180><c> the</c><00:04:18.720><c> meaning</c>
+
+00:04:18.890 --> 00:04:18.900 align:start position:0%
+they were classified as 1 3 the meaning
+ 
+
+00:04:18.900 --> 00:04:21.830 align:start position:0%
+they were classified as 1 3 the meaning
+is<00:04:19.199><c> no</c><00:04:19.500><c> examples</c><00:04:20.040><c> where</c><00:04:20.400><c> predictors</c><00:04:20.940><c> no</c><00:04:21.419><c> that</c>
+
+00:04:21.830 --> 00:04:21.840 align:start position:0%
+is no examples where predictors no that
+ 
+
+00:04:21.840 --> 00:04:23.749 align:start position:0%
+is no examples where predictors no that
+is<00:04:21.959><c> nothing</c><00:04:22.139><c> but</c><00:04:22.440><c> true</c><00:04:22.800><c> negative</c><00:04:23.220><c> which</c><00:04:23.639><c> is</c>
+
+00:04:23.749 --> 00:04:23.759 align:start position:0%
+is nothing but true negative which is
+ 
+
+00:04:23.759 --> 00:04:25.310 align:start position:0%
+is nothing but true negative which is
+equivalent<00:04:24.180><c> to</c><00:04:24.300><c> 16</c><00:04:24.479><c> here</c>
+
+00:04:25.310 --> 00:04:25.320 align:start position:0%
+equivalent to 16 here
+ 
+
+00:04:25.320 --> 00:04:27.469 align:start position:0%
+equivalent to 16 here
+similarly<00:04:26.040><c> we</c><00:04:26.400><c> need</c><00:04:26.520><c> to</c><00:04:26.759><c> create</c><00:04:27.000><c> one</c><00:04:27.360><c> more</c>
+
+00:04:27.469 --> 00:04:27.479 align:start position:0%
+similarly we need to create one more
+ 
+
+00:04:27.479 --> 00:04:30.770 align:start position:0%
+similarly we need to create one more
+confusion<00:04:27.960><c> Matrix</c><00:04:28.380><c> for</c><00:04:29.220><c> the</c><00:04:29.699><c> third</c><00:04:29.880><c> one</c><00:04:30.180><c> where</c>
+
+00:04:30.770 --> 00:04:30.780 align:start position:0%
+confusion Matrix for the third one where
+ 
+
+00:04:30.780 --> 00:04:32.990 align:start position:0%
+confusion Matrix for the third one where
+three<00:04:31.080><c> will</c><00:04:31.320><c> be</c><00:04:31.440><c> considered</c><00:04:31.860><c> as</c><00:04:32.040><c> s</c><00:04:32.280><c> and</c><00:04:32.759><c> one</c>
+
+00:04:32.990 --> 00:04:33.000 align:start position:0%
+three will be considered as s and one
+ 
+
+00:04:33.000 --> 00:04:35.570 align:start position:0%
+three will be considered as s and one
+two<00:04:33.180><c> will</c><00:04:33.360><c> be</c><00:04:33.540><c> considered</c><00:04:33.900><c> as</c><00:04:34.080><c> no</c><00:04:34.259><c> here</c><00:04:34.560><c> and</c><00:04:35.280><c> it</c>
+
+00:04:35.570 --> 00:04:35.580 align:start position:0%
+two will be considered as no here and it
+ 
+
+00:04:35.580 --> 00:04:37.189 align:start position:0%
+two will be considered as no here and it
+looks<00:04:35.880><c> something</c><00:04:36.060><c> like</c><00:04:36.360><c> this</c>
+
+00:04:37.189 --> 00:04:37.199 align:start position:0%
+looks something like this
+ 
+
+00:04:37.199 --> 00:04:39.469 align:start position:0%
+looks something like this
+once<00:04:37.740><c> you</c><00:04:37.860><c> form</c><00:04:38.040><c> this</c><00:04:38.340><c> confusion</c><00:04:38.940><c> Matrix</c><00:04:39.240><c> for</c>
+
+00:04:39.469 --> 00:04:39.479 align:start position:0%
+once you form this confusion Matrix for
+ 
+
+00:04:39.479 --> 00:04:42.110 align:start position:0%
+once you form this confusion Matrix for
+binary<00:04:39.900><c> classification</c><00:04:40.500><c> now</c><00:04:41.280><c> we</c><00:04:41.460><c> will</c><00:04:41.639><c> try</c><00:04:41.820><c> to</c>
+
+00:04:42.110 --> 00:04:42.120 align:start position:0%
+binary classification now we will try to
+ 
+
+00:04:42.120 --> 00:04:44.450 align:start position:0%
+binary classification now we will try to
+find<00:04:42.900><c> the</c><00:04:43.080><c> values</c><00:04:43.560><c> for</c><00:04:43.860><c> each</c><00:04:44.100><c> of</c><00:04:44.220><c> those</c>
+
+00:04:44.450 --> 00:04:44.460 align:start position:0%
+find the values for each of those
+ 
+
+00:04:44.460 --> 00:04:46.730 align:start position:0%
+find the values for each of those
+particular<00:04:44.820><c> performance</c><00:04:45.360><c> Matrix</c><00:04:45.780><c> the</c><00:04:46.620><c> first</c>
+
+00:04:46.730 --> 00:04:46.740 align:start position:0%
+particular performance Matrix the first
+ 
+
+00:04:46.740 --> 00:04:49.430 align:start position:0%
+particular performance Matrix the first
+one<00:04:46.919><c> in</c><00:04:47.280><c> this</c><00:04:47.340><c> case</c><00:04:47.520><c> is</c><00:04:47.759><c> accuracy</c><00:04:48.600><c> accuracy</c>
+
+00:04:49.430 --> 00:04:49.440 align:start position:0%
+one in this case is accuracy accuracy
+ 
+
+00:04:49.440 --> 00:04:52.370 align:start position:0%
+one in this case is accuracy accuracy
+for<00:04:49.740><c> class</c><00:04:50.220><c> 1</c><00:04:50.460><c> is</c><00:04:50.699><c> equivalent</c><00:04:51.120><c> to</c><00:04:51.360><c> TP</c><00:04:51.900><c> plus</c><00:04:52.080><c> TN</c>
+
+00:04:52.370 --> 00:04:52.380 align:start position:0%
+for class 1 is equivalent to TP plus TN
+ 
+
+00:04:52.380 --> 00:04:54.230 align:start position:0%
+for class 1 is equivalent to TP plus TN
+that<00:04:52.620><c> is</c><00:04:52.680><c> nothing</c><00:04:52.860><c> but</c><00:04:53.100><c> a</c><00:04:53.220><c> true</c><00:04:53.400><c> positive</c><00:04:53.940><c> plus</c>
+
+00:04:54.230 --> 00:04:54.240 align:start position:0%
+that is nothing but a true positive plus
+ 
+
+00:04:54.240 --> 00:04:57.110 align:start position:0%
+that is nothing but a true positive plus
+true<00:04:54.780><c> negative</c><00:04:55.680><c> that</c><00:04:56.400><c> is</c><00:04:56.580><c> the</c><00:04:56.880><c> correct</c>
+
+00:04:57.110 --> 00:04:57.120 align:start position:0%
+true negative that is the correct
+ 
+
+00:04:57.120 --> 00:04:59.210 align:start position:0%
+true negative that is the correct
+classification<00:04:57.660><c> divided</c><00:04:58.440><c> by</c><00:04:58.740><c> all</c>
+
+00:04:59.210 --> 00:04:59.220 align:start position:0%
+classification divided by all
+ 
+
+00:04:59.220 --> 00:05:01.070 align:start position:0%
+classification divided by all
+possibilities<00:04:59.759><c> which</c><00:05:00.240><c> are</c><00:05:00.360><c> present</c><00:05:00.660><c> in</c><00:05:00.840><c> this</c>
+
+00:05:01.070 --> 00:05:01.080 align:start position:0%
+possibilities which are present in this
+ 
+
+00:05:01.080 --> 00:05:03.770 align:start position:0%
+possibilities which are present in this
+confusion<00:05:01.800><c> Matrix</c><00:05:02.160><c> that</c><00:05:02.699><c> is</c><00:05:02.820><c> nothing</c><00:05:03.000><c> but</c><00:05:03.240><c> t</c><00:05:03.600><c> p</c>
+
+00:05:03.770 --> 00:05:03.780 align:start position:0%
+confusion Matrix that is nothing but t p
+ 
+
+00:05:03.780 --> 00:05:06.890 align:start position:0%
+confusion Matrix that is nothing but t p
+to<00:05:04.020><c> be</c><00:05:04.199><c> positive</c><00:05:04.560><c> plus</c><00:05:04.800><c> FN</c><00:05:05.340><c> false</c><00:05:05.699><c> negative</c><00:05:06.060><c> FP</c>
+
+00:05:06.890 --> 00:05:06.900 align:start position:0%
+to be positive plus FN false negative FP
+ 
+
+00:05:06.900 --> 00:05:09.050 align:start position:0%
+to be positive plus FN false negative FP
+Falls<00:05:07.139><c> positive</c><00:05:07.620><c> plus</c><00:05:08.160><c> t</c><00:05:08.400><c> n</c><00:05:08.580><c> that</c><00:05:08.820><c> is</c><00:05:08.940><c> true</c>
+
+00:05:09.050 --> 00:05:09.060 align:start position:0%
+Falls positive plus t n that is true
+ 
+
+00:05:09.060 --> 00:05:11.030 align:start position:0%
+Falls positive plus t n that is true
+negative<00:05:09.419><c> here</c><00:05:09.660><c> once</c><00:05:10.199><c> you</c><00:05:10.259><c> put</c><00:05:10.440><c> the</c><00:05:10.680><c> values</c>
+
+00:05:11.030 --> 00:05:11.040 align:start position:0%
+negative here once you put the values
+ 
+
+00:05:11.040 --> 00:05:12.950 align:start position:0%
+negative here once you put the values
+from<00:05:11.280><c> this</c><00:05:11.520><c> particular</c><00:05:11.880><c> confusion</c><00:05:12.600><c> Matrix</c>
+
+00:05:12.950 --> 00:05:12.960 align:start position:0%
+from this particular confusion Matrix
+ 
+
+00:05:12.960 --> 00:05:15.950 align:start position:0%
+from this particular confusion Matrix
+into<00:05:13.259><c> this</c><00:05:13.500><c> equation</c><00:05:13.800><c> you</c><00:05:14.400><c> will</c><00:05:14.580><c> get</c><00:05:14.759><c> 0.87</c><00:05:15.540><c> as</c>
+
+00:05:15.950 --> 00:05:15.960 align:start position:0%
+into this equation you will get 0.87 as
+ 
+
+00:05:15.960 --> 00:05:18.710 align:start position:0%
+into this equation you will get 0.87 as
+the<00:05:16.139><c> accuracy</c><00:05:16.620><c> for</c><00:05:16.860><c> class</c><00:05:17.100><c> 1</c><00:05:17.340><c> here</c><00:05:17.720><c> similarly</c>
+
+00:05:18.710 --> 00:05:18.720 align:start position:0%
+the accuracy for class 1 here similarly
+ 
+
+00:05:18.720 --> 00:05:20.629 align:start position:0%
+the accuracy for class 1 here similarly
+we<00:05:19.020><c> will</c><00:05:19.139><c> calculate</c><00:05:19.560><c> the</c><00:05:19.680><c> accuracy</c><00:05:20.160><c> for</c><00:05:20.400><c> Class</c>
+
+00:05:20.629 --> 00:05:20.639 align:start position:0%
+we will calculate the accuracy for Class
+ 
+
+00:05:20.639 --> 00:05:22.610 align:start position:0%
+we will calculate the accuracy for Class
+2<00:05:20.880><c> again</c><00:05:21.240><c> we</c><00:05:21.540><c> need</c><00:05:21.660><c> to</c><00:05:21.720><c> use</c><00:05:21.900><c> the</c><00:05:22.139><c> same</c><00:05:22.259><c> equation</c>
+
+00:05:22.610 --> 00:05:22.620 align:start position:0%
+2 again we need to use the same equation
+ 
+
+00:05:22.620 --> 00:05:24.529 align:start position:0%
+2 again we need to use the same equation
+but<00:05:23.039><c> the</c><00:05:23.160><c> values</c><00:05:23.460><c> we</c><00:05:23.699><c> need</c><00:05:23.880><c> to</c><00:05:23.940><c> use</c><00:05:24.120><c> it</c><00:05:24.300><c> from</c>
+
+00:05:24.529 --> 00:05:24.539 align:start position:0%
+but the values we need to use it from
+ 
+
+00:05:24.539 --> 00:05:27.590 align:start position:0%
+but the values we need to use it from
+this<00:05:24.960><c> particular</c><00:05:25.520><c> confusion</c><00:05:26.520><c> Matrix</c><00:05:26.820><c> here</c><00:05:27.000><c> we</c>
+
+00:05:27.590 --> 00:05:27.600 align:start position:0%
+this particular confusion Matrix here we
+ 
+
+00:05:27.600 --> 00:05:30.409 align:start position:0%
+this particular confusion Matrix here we
+will<00:05:27.720><c> get</c><00:05:27.900><c> 0.83</c><00:05:28.800><c> as</c><00:05:29.340><c> the</c>
+
+00:05:30.409 --> 00:05:30.419 align:start position:0%
+will get 0.83 as the
+ 
+
+00:05:30.419 --> 00:05:33.830 align:start position:0%
+will get 0.83 as the
+accuracy<00:05:31.320><c> for</c><00:05:31.740><c> second</c><00:05:32.100><c> class</c><00:05:32.479><c> similarly</c><00:05:33.479><c> for</c>
+
+00:05:33.830 --> 00:05:33.840 align:start position:0%
+accuracy for second class similarly for
+ 
+
+00:05:33.840 --> 00:05:36.050 align:start position:0%
+accuracy for second class similarly for
+the<00:05:34.259><c> third</c><00:05:34.380><c> class</c><00:05:34.680><c> we</c><00:05:35.460><c> need</c><00:05:35.580><c> to</c><00:05:35.699><c> use</c><00:05:35.880><c> the</c>
+
+00:05:36.050 --> 00:05:36.060 align:start position:0%
+the third class we need to use the
+ 
+
+00:05:36.060 --> 00:05:38.990 align:start position:0%
+the third class we need to use the
+values<00:05:36.360><c> from</c><00:05:36.600><c> this</c><00:05:36.840><c> particular</c><00:05:37.340><c> Matrix</c><00:05:38.340><c> we</c>
+
+00:05:38.990 --> 00:05:39.000 align:start position:0%
+values from this particular Matrix we
+ 
+
+00:05:39.000 --> 00:05:41.810 align:start position:0%
+values from this particular Matrix we
+will<00:05:39.180><c> get</c><00:05:39.380><c> 0.90</c><00:05:40.380><c> as</c><00:05:40.800><c> the</c><00:05:41.039><c> accuracy</c><00:05:41.520><c> in</c><00:05:41.699><c> this</c>
+
+00:05:41.810 --> 00:05:41.820 align:start position:0%
+will get 0.90 as the accuracy in this
+ 
+
+00:05:41.820 --> 00:05:42.770 align:start position:0%
+will get 0.90 as the accuracy in this
+case
+
+00:05:42.770 --> 00:05:42.780 align:start position:0%
+case
+ 
+
+00:05:42.780 --> 00:05:44.629 align:start position:0%
+case
+now<00:05:43.199><c> we</c><00:05:43.320><c> will</c><00:05:43.500><c> try</c><00:05:43.680><c> to</c><00:05:43.860><c> calculate</c><00:05:44.280><c> the</c>
+
+00:05:44.629 --> 00:05:44.639 align:start position:0%
+now we will try to calculate the
+ 
+
+00:05:44.639 --> 00:05:46.730 align:start position:0%
+now we will try to calculate the
+remaining<00:05:45.180><c> performance</c><00:05:45.539><c> Matrix</c><00:05:45.960><c> Precision</c>
+
+00:05:46.730 --> 00:05:46.740 align:start position:0%
+remaining performance Matrix Precision
+ 
+
+00:05:46.740 --> 00:05:49.490 align:start position:0%
+remaining performance Matrix Precision
+of<00:05:47.100><c> class</c><00:05:47.340><c> 1</c><00:05:47.580><c> is</c><00:05:47.940><c> equivalent</c><00:05:48.419><c> to</c><00:05:48.600><c> TP</c><00:05:49.020><c> divided</c>
+
+00:05:49.490 --> 00:05:49.500 align:start position:0%
+of class 1 is equivalent to TP divided
+ 
+
+00:05:49.500 --> 00:05:51.350 align:start position:0%
+of class 1 is equivalent to TP divided
+by<00:05:49.620><c> TT</c><00:05:50.100><c> plus</c><00:05:50.340><c> FP</c>
+
+00:05:51.350 --> 00:05:51.360 align:start position:0%
+by TT plus FP
+ 
+
+00:05:51.360 --> 00:05:53.990 align:start position:0%
+by TT plus FP
+so<00:05:51.720><c> I</c><00:05:51.840><c> will</c><00:05:52.020><c> put</c><00:05:52.199><c> the</c><00:05:52.620><c> values</c><00:05:52.919><c> here</c><00:05:53.100><c> again</c><00:05:53.699><c> I</c>
+
+00:05:53.990 --> 00:05:54.000 align:start position:0%
+so I will put the values here again I
+ 
+
+00:05:54.000 --> 00:05:57.110 align:start position:0%
+so I will put the values here again I
+will<00:05:54.120><c> get</c><00:05:54.240><c> the</c><00:05:54.419><c> value</c><00:05:54.600><c> as</c><00:05:54.900><c> 0.8</c><00:05:55.560><c> for</c><00:05:56.100><c> a</c><00:05:56.759><c> Class</c><00:05:56.940><c> 1</c>
+
+00:05:57.110 --> 00:05:57.120 align:start position:0%
+will get the value as 0.8 for a Class 1
+ 
+
+00:05:57.120 --> 00:05:59.330 align:start position:0%
+will get the value as 0.8 for a Class 1
+Precision<00:05:57.600><c> similarly</c><00:05:58.560><c> we</c><00:05:58.800><c> will</c><00:05:58.979><c> calculate</c>
+
+00:05:59.330 --> 00:05:59.340 align:start position:0%
+Precision similarly we will calculate
+ 
+
+00:05:59.340 --> 00:06:01.010 align:start position:0%
+Precision similarly we will calculate
+the<00:05:59.580><c> recall</c><00:05:59.880><c> for</c><00:06:00.120><c> class</c><00:06:00.360><c> 1</c><00:06:00.539><c> which</c><00:06:00.900><c> is</c>
+
+00:06:01.010 --> 00:06:01.020 align:start position:0%
+the recall for class 1 which is
+ 
+
+00:06:01.020 --> 00:06:03.710 align:start position:0%
+the recall for class 1 which is
+equivalent<00:06:01.440><c> to</c><00:06:01.620><c> TP</c><00:06:02.039><c> divided</c><00:06:02.520><c> by</c><00:06:02.639><c> T</c><00:06:02.880><c> P</c><00:06:03.060><c> plus</c><00:06:03.300><c> FN</c>
+
+00:06:03.710 --> 00:06:03.720 align:start position:0%
+equivalent to TP divided by T P plus FN
+ 
+
+00:06:03.720 --> 00:06:06.590 align:start position:0%
+equivalent to TP divided by T P plus FN
+which<00:06:04.380><c> is</c><00:06:04.440><c> equivalent</c><00:06:04.919><c> to</c><00:06:05.100><c> 0.8</c><00:06:05.639><c> once</c><00:06:06.539><c> you</c>
+
+00:06:06.590 --> 00:06:06.600 align:start position:0%
+which is equivalent to 0.8 once you
+ 
+
+00:06:06.600 --> 00:06:08.450 align:start position:0%
+which is equivalent to 0.8 once you
+calculate<00:06:06.960><c> precision</c><00:06:07.440><c> and</c><00:06:07.680><c> recall</c><00:06:08.039><c> for</c><00:06:08.280><c> class</c>
+
+00:06:08.450 --> 00:06:08.460 align:start position:0%
+calculate precision and recall for class
+ 
+
+00:06:08.460 --> 00:06:10.909 align:start position:0%
+calculate precision and recall for class
+1<00:06:08.699><c> we</c><00:06:09.240><c> can</c><00:06:09.419><c> calculate</c><00:06:09.840><c> the</c><00:06:10.020><c> F1</c><00:06:10.380><c> score</c><00:06:10.620><c> for</c>
+
+00:06:10.909 --> 00:06:10.919 align:start position:0%
+1 we can calculate the F1 score for
+ 
+
+00:06:10.919 --> 00:06:12.590 align:start position:0%
+1 we can calculate the F1 score for
+class<00:06:11.100><c> 1</c><00:06:11.280><c> which</c><00:06:11.580><c> is</c><00:06:11.699><c> equivalent</c><00:06:12.060><c> to</c><00:06:12.180><c> 2</c><00:06:12.419><c> times</c>
+
+00:06:12.590 --> 00:06:12.600 align:start position:0%
+class 1 which is equivalent to 2 times
+ 
+
+00:06:12.600 --> 00:06:15.230 align:start position:0%
+class 1 which is equivalent to 2 times
+Precision<00:06:13.199><c> multiplied</c><00:06:13.800><c> by</c><00:06:13.979><c> recall</c><00:06:14.400><c> divided</c>
+
+00:06:15.230 --> 00:06:15.240 align:start position:0%
+Precision multiplied by recall divided
+ 
+
+00:06:15.240 --> 00:06:17.390 align:start position:0%
+Precision multiplied by recall divided
+by<00:06:15.360><c> Precision</c><00:06:15.720><c> plus</c><00:06:16.020><c> recall</c><00:06:16.500><c> we</c><00:06:16.979><c> have</c><00:06:17.160><c> these</c>
+
+00:06:17.390 --> 00:06:17.400 align:start position:0%
+by Precision plus recall we have these
+ 
+
+00:06:17.400 --> 00:06:19.610 align:start position:0%
+by Precision plus recall we have these
+values<00:06:17.759><c> we</c><00:06:18.300><c> will</c><00:06:18.419><c> put</c><00:06:18.600><c> those</c><00:06:18.780><c> values</c><00:06:19.199><c> and</c><00:06:19.500><c> then</c>
+
+00:06:19.610 --> 00:06:19.620 align:start position:0%
+values we will put those values and then
+ 
+
+00:06:19.620 --> 00:06:22.670 align:start position:0%
+values we will put those values and then
+we<00:06:19.800><c> will</c><00:06:19.979><c> get</c><00:06:20.100><c> 0.8</c><00:06:20.639><c> as</c><00:06:20.880><c> the</c><00:06:21.060><c> F1</c><00:06:21.360><c> score</c><00:06:21.660><c> for</c><00:06:21.960><c> the</c>
+
+00:06:22.670 --> 00:06:22.680 align:start position:0%
+we will get 0.8 as the F1 score for the
+ 
+
+00:06:22.680 --> 00:06:24.350 align:start position:0%
+we will get 0.8 as the F1 score for the
+class<00:06:22.800><c> 1</c><00:06:23.100><c> over</c><00:06:23.400><c> here</c>
+
+00:06:24.350 --> 00:06:24.360 align:start position:0%
+class 1 over here
+ 
+
+00:06:24.360 --> 00:06:26.689 align:start position:0%
+class 1 over here
+similarly<00:06:25.139><c> I</c><00:06:25.380><c> will</c><00:06:25.500><c> calculate</c><00:06:25.979><c> the</c><00:06:26.340><c> Precision</c>
+
+00:06:26.689 --> 00:06:26.699 align:start position:0%
+similarly I will calculate the Precision
+ 
+
+00:06:26.699 --> 00:06:29.390 align:start position:0%
+similarly I will calculate the Precision
+for<00:06:27.060><c> Class</c><00:06:27.240><c> 2</c><00:06:27.960><c> I</c><00:06:28.440><c> will</c><00:06:28.500><c> put</c><00:06:28.680><c> the</c><00:06:28.860><c> values</c><00:06:29.160><c> from</c>
+
+00:06:29.390 --> 00:06:29.400 align:start position:0%
+for Class 2 I will put the values from
+ 
+
+00:06:29.400 --> 00:06:31.490 align:start position:0%
+for Class 2 I will put the values from
+this<00:06:29.520><c> one</c><00:06:29.699><c> into</c><00:06:30.000><c> this</c><00:06:30.300><c> equation</c><00:06:30.600><c> I</c><00:06:31.199><c> will</c><00:06:31.380><c> get</c>
+
+00:06:31.490 --> 00:06:31.500 align:start position:0%
+this one into this equation I will get
+ 
+
+00:06:31.500 --> 00:06:33.290 align:start position:0%
+this one into this equation I will get
+the<00:06:31.740><c> Precision</c><00:06:32.100><c> for</c><00:06:32.340><c> Class</c><00:06:32.580><c> 2</c><00:06:32.759><c> is</c><00:06:32.940><c> equal</c><00:06:33.120><c> to</c>
+
+00:06:33.290 --> 00:06:33.300 align:start position:0%
+the Precision for Class 2 is equal to
+ 
+
+00:06:33.300 --> 00:06:36.469 align:start position:0%
+the Precision for Class 2 is equal to
+0.69<00:06:34.100><c> similarly</c><00:06:35.100><c> recall</c><00:06:35.580><c> for</c><00:06:35.819><c> Class</c><00:06:36.000><c> 2</c><00:06:36.240><c> is</c>
+
+00:06:36.469 --> 00:06:36.479 align:start position:0%
+0.69 similarly recall for Class 2 is
+ 
+
+00:06:36.479 --> 00:06:39.469 align:start position:0%
+0.69 similarly recall for Class 2 is
+equal<00:06:36.660><c> into</c><00:06:36.960><c> 0.9</c><00:06:37.560><c> and</c><00:06:38.280><c> the</c><00:06:38.580><c> F1</c><00:06:39.000><c> score</c><00:06:39.240><c> for</c>
+
+00:06:39.469 --> 00:06:39.479 align:start position:0%
+equal into 0.9 and the F1 score for
+ 
+
+00:06:39.479 --> 00:06:41.409 align:start position:0%
+equal into 0.9 and the F1 score for
+Class<00:06:39.780><c> 2</c><00:06:39.960><c> is</c><00:06:40.199><c> equivalent</c><00:06:40.620><c> to</c>
+
+00:06:41.409 --> 00:06:41.419 align:start position:0%
+Class 2 is equivalent to
+ 
+
+00:06:41.419 --> 00:06:43.370 align:start position:0%
+Class 2 is equivalent to
+0.78<00:06:42.419><c> here</c>
+
+00:06:43.370 --> 00:06:43.380 align:start position:0%
+0.78 here
+ 
+
+00:06:43.380 --> 00:06:45.110 align:start position:0%
+0.78 here
+once<00:06:43.800><c> you're</c><00:06:43.860><c> done</c><00:06:44.100><c> with</c><00:06:44.220><c> the</c><00:06:44.400><c> class</c><00:06:44.520><c> 2</c><00:06:44.759><c> I</c><00:06:45.000><c> will</c>
+
+00:06:45.110 --> 00:06:45.120 align:start position:0%
+once you're done with the class 2 I will
+ 
+
+00:06:45.120 --> 00:06:47.330 align:start position:0%
+once you're done with the class 2 I will
+go<00:06:45.240><c> with</c><00:06:45.419><c> class</c><00:06:45.720><c> 3</c><00:06:45.900><c> again</c><00:06:46.500><c> the</c><00:06:46.860><c> same</c><00:06:46.979><c> equation</c>
+
+00:06:47.330 --> 00:06:47.340 align:start position:0%
+go with class 3 again the same equation
+ 
+
+00:06:47.340 --> 00:06:49.189 align:start position:0%
+go with class 3 again the same equation
+only<00:06:47.759><c> thing</c><00:06:48.000><c> is</c><00:06:48.120><c> we</c><00:06:48.300><c> need</c><00:06:48.479><c> to</c><00:06:48.539><c> put</c><00:06:48.720><c> the</c><00:06:48.900><c> values</c>
+
+00:06:49.189 --> 00:06:49.199 align:start position:0%
+only thing is we need to put the values
+ 
+
+00:06:49.199 --> 00:06:51.650 align:start position:0%
+only thing is we need to put the values
+from<00:06:49.560><c> this</c><00:06:50.039><c> particular</c><00:06:50.400><c> Matrix</c><00:06:50.819><c> the</c>
+
+00:06:51.650 --> 00:06:51.660 align:start position:0%
+from this particular Matrix the
+ 
+
+00:06:51.660 --> 00:06:54.409 align:start position:0%
+from this particular Matrix the
+Precision<00:06:52.020><c> for</c><00:06:52.319><c> class</c><00:06:52.620><c> 3</c><00:06:53.160><c> is</c><00:06:53.400><c> equal</c><00:06:53.520><c> to</c><00:06:53.699><c> 1.0</c>
+
+00:06:54.409 --> 00:06:54.419 align:start position:0%
+Precision for class 3 is equal to 1.0
+ 
+
+00:06:54.419 --> 00:06:58.969 align:start position:0%
+Precision for class 3 is equal to 1.0
+recall<00:06:55.380><c> is</c><00:06:55.620><c> equivalent</c><00:06:56.039><c> to</c><00:06:56.280><c> 0.7</c><00:06:56.880><c> and</c><00:06:57.740><c> F1</c><00:06:58.740><c> score</c>
+
+00:06:58.969 --> 00:06:58.979 align:start position:0%
+recall is equivalent to 0.7 and F1 score
+ 
+
+00:06:58.979 --> 00:07:01.490 align:start position:0%
+recall is equivalent to 0.7 and F1 score
+for<00:06:59.220><c> class</c><00:06:59.400><c> 3</c><00:06:59.639><c> is</c><00:06:59.880><c> equivalent</c><00:07:00.300><c> to</c><00:07:00.479><c> 0.82</c><00:07:01.259><c> in</c>
+
+00:07:01.490 --> 00:07:01.500 align:start position:0%
+for class 3 is equivalent to 0.82 in
+ 
+
+00:07:01.500 --> 00:07:02.510 align:start position:0%
+for class 3 is equivalent to 0.82 in
+this<00:07:01.620><c> case</c>
+
+00:07:02.510 --> 00:07:02.520 align:start position:0%
+this case
+ 
+
+00:07:02.520 --> 00:07:05.330 align:start position:0%
+this case
+once<00:07:03.120><c> you</c><00:07:03.180><c> calculate</c><00:07:03.660><c> Precision</c><00:07:04.500><c> recall</c><00:07:05.160><c> and</c>
+
+00:07:05.330 --> 00:07:05.340 align:start position:0%
+once you calculate Precision recall and
+ 
+
+00:07:05.340 --> 00:07:07.969 align:start position:0%
+once you calculate Precision recall and
+F1<00:07:05.639><c> score</c><00:07:05.880><c> the</c><00:07:06.600><c> next</c><00:07:06.720><c> point</c><00:07:07.080><c> is</c><00:07:07.259><c> to</c><00:07:07.500><c> calculate</c>
+
+00:07:07.969 --> 00:07:07.979 align:start position:0%
+F1 score the next point is to calculate
+ 
+
+00:07:07.979 --> 00:07:11.270 align:start position:0%
+F1 score the next point is to calculate
+macro<00:07:08.759><c> F1</c><00:07:09.180><c> score</c><00:07:09.419><c> macro</c><00:07:10.319><c> F1</c><00:07:10.680><c> score</c><00:07:10.860><c> is</c><00:07:11.100><c> always</c>
+
+00:07:11.270 --> 00:07:11.280 align:start position:0%
+macro F1 score macro F1 score is always
+ 
+
+00:07:11.280 --> 00:07:14.390 align:start position:0%
+macro F1 score macro F1 score is always
+equal<00:07:11.580><c> into</c><00:07:11.880><c> F1</c><00:07:12.600><c> score</c><00:07:12.840><c> of</c><00:07:13.139><c> class</c><00:07:13.380><c> 1</c><00:07:13.620><c> plus</c><00:07:14.039><c> F1</c>
+
+00:07:14.390 --> 00:07:14.400 align:start position:0%
+equal into F1 score of class 1 plus F1
+ 
+
+00:07:14.400 --> 00:07:16.850 align:start position:0%
+equal into F1 score of class 1 plus F1
+score<00:07:14.639><c> of</c><00:07:14.880><c> Class</c><00:07:15.060><c> 2</c><00:07:15.360><c> plus</c><00:07:15.900><c> F1</c><00:07:16.259><c> score</c><00:07:16.500><c> of</c><00:07:16.680><c> class</c>
+
+00:07:16.850 --> 00:07:16.860 align:start position:0%
+score of Class 2 plus F1 score of class
+ 
+
+00:07:16.860 --> 00:07:19.490 align:start position:0%
+score of Class 2 plus F1 score of class
+3<00:07:17.039><c> divided</c><00:07:17.580><c> by</c><00:07:17.880><c> 3</c><00:07:18.240><c> here</c><00:07:18.479><c> because</c><00:07:19.080><c> we</c><00:07:19.380><c> have</c>
+
+00:07:19.490 --> 00:07:19.500 align:start position:0%
+3 divided by 3 here because we have
+ 
+
+00:07:19.500 --> 00:07:21.770 align:start position:0%
+3 divided by 3 here because we have
+three<00:07:19.680><c> classes</c><00:07:20.160><c> add</c><00:07:20.819><c> all</c><00:07:21.180><c> the</c><00:07:21.300><c> F1</c><00:07:21.539><c> scores</c>
+
+00:07:21.770 --> 00:07:21.780 align:start position:0%
+three classes add all the F1 scores
+ 
+
+00:07:21.780 --> 00:07:24.110 align:start position:0%
+three classes add all the F1 scores
+divided<00:07:22.380><c> by</c><00:07:22.500><c> the</c><00:07:22.680><c> number</c><00:07:22.800><c> of</c><00:07:22.919><c> classes</c><00:07:23.340><c> here</c>
+
+00:07:24.110 --> 00:07:24.120 align:start position:0%
+divided by the number of classes here
+ 
+
+00:07:24.120 --> 00:07:25.850 align:start position:0%
+divided by the number of classes here
+we<00:07:24.599><c> have</c><00:07:24.720><c> already</c><00:07:24.900><c> calculated</c><00:07:25.440><c> these</c>
+
+00:07:25.850 --> 00:07:25.860 align:start position:0%
+we have already calculated these
+ 
+
+00:07:25.860 --> 00:07:27.469 align:start position:0%
+we have already calculated these
+particular<00:07:26.160><c> values</c><00:07:26.520><c> we</c><00:07:26.759><c> will</c><00:07:26.940><c> put</c><00:07:27.060><c> it</c><00:07:27.180><c> in</c><00:07:27.360><c> this</c>
+
+00:07:27.469 --> 00:07:27.479 align:start position:0%
+particular values we will put it in this
+ 
+
+00:07:27.479 --> 00:07:29.870 align:start position:0%
+particular values we will put it in this
+equation<00:07:27.780><c> we</c><00:07:28.319><c> will</c><00:07:28.500><c> get</c><00:07:28.620><c> macro</c><00:07:29.099><c> F1</c><00:07:29.460><c> score</c><00:07:29.639><c> is</c>
+
+00:07:29.870 --> 00:07:29.880 align:start position:0%
+equation we will get macro F1 score is
+ 
+
+00:07:29.880 --> 00:07:32.029 align:start position:0%
+equation we will get macro F1 score is
+equivalent<00:07:30.300><c> to</c><00:07:30.419><c> 0.8</c><00:07:30.900><c> in</c><00:07:31.080><c> this</c><00:07:31.199><c> case</c>
+
+00:07:32.029 --> 00:07:32.039 align:start position:0%
+equivalent to 0.8 in this case
+ 
+
+00:07:32.039 --> 00:07:34.129 align:start position:0%
+equivalent to 0.8 in this case
+similarly<00:07:32.819><c> we</c><00:07:33.000><c> will</c><00:07:33.180><c> calculate</c><00:07:33.599><c> the</c><00:07:33.780><c> weighted</c>
+
+00:07:34.129 --> 00:07:34.139 align:start position:0%
+similarly we will calculate the weighted
+ 
+
+00:07:34.139 --> 00:07:36.529 align:start position:0%
+similarly we will calculate the weighted
+F1<00:07:34.440><c> score</c><00:07:34.620><c> which</c><00:07:34.919><c> is</c><00:07:35.039><c> equivalent</c><00:07:35.460><c> to</c><00:07:35.639><c> the</c>
+
+00:07:36.529 --> 00:07:36.539 align:start position:0%
+F1 score which is equivalent to the
+ 
+
+00:07:36.539 --> 00:07:38.749 align:start position:0%
+F1 score which is equivalent to the
+number<00:07:36.720><c> of</c><00:07:36.900><c> class</c><00:07:37.199><c> 1</c><00:07:37.380><c> examples</c><00:07:37.919><c> multiplied</c><00:07:38.520><c> by</c>
+
+00:07:38.749 --> 00:07:38.759 align:start position:0%
+number of class 1 examples multiplied by
+ 
+
+00:07:38.759 --> 00:07:41.809 align:start position:0%
+number of class 1 examples multiplied by
+F1<00:07:39.419><c> score</c><00:07:39.720><c> of</c><00:07:40.020><c> class</c><00:07:40.259><c> 1</c><00:07:40.440><c> plus</c><00:07:41.160><c> the</c><00:07:41.460><c> number</c><00:07:41.580><c> of</c>
+
+00:07:41.809 --> 00:07:41.819 align:start position:0%
+F1 score of class 1 plus the number of
+ 
+
+00:07:41.819 --> 00:07:44.809 align:start position:0%
+F1 score of class 1 plus the number of
+Class<00:07:42.720><c> 2</c><00:07:42.900><c> examples</c><00:07:43.380><c> multiplied</c><00:07:43.919><c> by</c><00:07:44.160><c> F1</c><00:07:44.520><c> score</c>
+
+00:07:44.809 --> 00:07:44.819 align:start position:0%
+Class 2 examples multiplied by F1 score
+ 
+
+00:07:44.819 --> 00:07:47.270 align:start position:0%
+Class 2 examples multiplied by F1 score
+of<00:07:45.000><c> cluster</c><00:07:45.360><c> examples</c><00:07:45.840><c> number</c><00:07:46.620><c> of</c><00:07:46.860><c> class</c><00:07:47.099><c> 3</c>
+
+00:07:47.270 --> 00:07:47.280 align:start position:0%
+of cluster examples number of class 3
+ 
+
+00:07:47.280 --> 00:07:49.550 align:start position:0%
+of cluster examples number of class 3
+examples<00:07:47.759><c> multiplied</c><00:07:48.360><c> by</c><00:07:48.539><c> F1</c><00:07:48.960><c> score</c><00:07:49.199><c> of</c><00:07:49.380><c> class</c>
+
+00:07:49.550 --> 00:07:49.560 align:start position:0%
+examples multiplied by F1 score of class
+ 
+
+00:07:49.560 --> 00:07:52.850 align:start position:0%
+examples multiplied by F1 score of class
+3<00:07:49.740><c> examples</c><00:07:50.300><c> divided</c><00:07:51.300><c> by</c><00:07:51.660><c> number</c><00:07:52.199><c> of</c><00:07:52.380><c> class</c><00:07:52.620><c> 1</c>
+
+00:07:52.850 --> 00:07:52.860 align:start position:0%
+3 examples divided by number of class 1
+ 
+
+00:07:52.860 --> 00:07:55.070 align:start position:0%
+3 examples divided by number of class 1
+examples<00:07:53.400><c> plus</c><00:07:53.699><c> number</c><00:07:54.000><c> of</c><00:07:54.240><c> Class</c><00:07:54.419><c> 2</c><00:07:54.660><c> examples</c>
+
+00:07:55.070 --> 00:07:55.080 align:start position:0%
+examples plus number of Class 2 examples
+ 
+
+00:07:55.080 --> 00:07:57.409 align:start position:0%
+examples plus number of Class 2 examples
+plus<00:07:55.319><c> number</c><00:07:55.560><c> of</c><00:07:55.800><c> class</c><00:07:55.979><c> 3</c><00:07:56.160><c> examples</c><00:07:56.699><c> which</c><00:07:57.240><c> is</c>
+
+00:07:57.409 --> 00:07:57.419 align:start position:0%
+plus number of class 3 examples which is
+ 
+
+00:07:57.419 --> 00:07:59.629 align:start position:0%
+plus number of class 3 examples which is
+equivalent<00:07:57.840><c> to</c><00:07:57.960><c> 0.8</c><00:07:58.380><c> in</c><00:07:58.620><c> this</c><00:07:58.740><c> case</c>
+
+00:07:59.629 --> 00:07:59.639 align:start position:0%
+equivalent to 0.8 in this case
+ 
+
+00:07:59.639 --> 00:08:02.089 align:start position:0%
+equivalent to 0.8 in this case
+so<00:08:00.419><c> in</c><00:08:00.539><c> this</c><00:08:00.660><c> video</c><00:08:00.780><c> I</c><00:08:01.080><c> have</c><00:08:01.199><c> discussed</c><00:08:01.620><c> how</c>
+
+00:08:02.089 --> 00:08:02.099 align:start position:0%
+so in this video I have discussed how
+ 
+
+00:08:02.099 --> 00:08:03.650 align:start position:0%
+so in this video I have discussed how
+can<00:08:02.340><c> we</c><00:08:02.460><c> convert</c><00:08:02.880><c> multi-class</c>
+
+00:08:03.650 --> 00:08:03.660 align:start position:0%
+can we convert multi-class
+ 
+
+00:08:03.660 --> 00:08:05.749 align:start position:0%
+can we convert multi-class
+classification<00:08:04.319><c> confusion</c><00:08:04.979><c> Matrix</c><00:08:05.340><c> into</c>
+
+00:08:05.749 --> 00:08:05.759 align:start position:0%
+classification confusion Matrix into
+ 
+
+00:08:05.759 --> 00:08:08.629 align:start position:0%
+classification confusion Matrix into
+binary<00:08:06.660><c> confusion</c><00:08:07.199><c> Matrix</c><00:08:07.620><c> and</c><00:08:08.340><c> how</c><00:08:08.520><c> to</c>
+
+00:08:08.629 --> 00:08:08.639 align:start position:0%
+binary confusion Matrix and how to
+ 
+
+00:08:08.639 --> 00:08:10.070 align:start position:0%
+binary confusion Matrix and how to
+calculate<00:08:09.060><c> the</c><00:08:09.300><c> different</c><00:08:09.479><c> performance</c>
+
+00:08:10.070 --> 00:08:10.080 align:start position:0%
+calculate the different performance
+ 
+
+00:08:10.080 --> 00:08:12.950 align:start position:0%
+calculate the different performance
+Matrix<00:08:10.560><c> I</c><00:08:11.340><c> hope</c><00:08:11.460><c> the</c><00:08:11.699><c> concept</c><00:08:11.940><c> is</c><00:08:12.120><c> clear</c><00:08:12.300><c> if</c>
+
+00:08:12.950 --> 00:08:12.960 align:start position:0%
+Matrix I hope the concept is clear if
+ 
+
+00:08:12.960 --> 00:08:14.570 align:start position:0%
+Matrix I hope the concept is clear if
+you<00:08:13.080><c> like</c><00:08:13.199><c> the</c><00:08:13.380><c> video</c><00:08:13.560><c> do</c><00:08:13.919><c> like</c><00:08:14.160><c> and</c><00:08:14.400><c> share</c>
+
+00:08:14.570 --> 00:08:14.580 align:start position:0%
+you like the video do like and share
+ 
+
+00:08:14.580 --> 00:08:16.370 align:start position:0%
+you like the video do like and share
+with<00:08:14.759><c> your</c><00:08:14.880><c> friends</c><00:08:15.060><c> press</c><00:08:15.840><c> the</c><00:08:16.020><c> Subscribe</c>
+
+00:08:16.370 --> 00:08:16.380 align:start position:0%
+with your friends press the Subscribe
+ 
+
+00:08:16.380 --> 00:08:18.050 align:start position:0%
+with your friends press the Subscribe
+button<00:08:16.620><c> for</c><00:08:16.740><c> more</c><00:08:16.919><c> videos</c><00:08:17.160><c> press</c><00:08:17.759><c> the</c><00:08:17.940><c> Bell</c>
+
+00:08:18.050 --> 00:08:18.060 align:start position:0%
+button for more videos press the Bell
+ 
+
+00:08:18.060 --> 00:08:20.450 align:start position:0%
+button for more videos press the Bell
+icon<00:08:18.360><c> for</c><00:08:18.660><c> regular</c><00:08:19.080><c> updates</c><00:08:19.500><c> thank</c><00:08:20.160><c> you</c><00:08:20.280><c> for</c>
+
+00:08:20.450 --> 00:08:20.460 align:start position:0%
+icon for regular updates thank you for
+ 
+
+00:08:20.460 --> 00:08:22.759 align:start position:0%
+icon for regular updates thank you for
+watching
+
