@@ -1,0 +1,7 @@
+streamlit
+json
+getpass
+langchain  
+langchain-groq 
+langchain-google-genai 
+
