@@ -1,0 +1,271 @@
+/* Global Styles */
+body {
+  background-image: url('sky.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #0b0900; /* Dark Gold Text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 40px; /* Adjust the top margin to move everything down */
+}
+
+/* Chat Container */
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px; /* Original padding for left-right and bottom */
+  background-color: rgba(240, 245, 247, 0); /* Transparent background */
+  transition: width 0.3s ease;
+  overflow: hidden;
+  height: 80vh; /* Set height to something fixed like 80vh */
+  max-height: 80vh; /* Prevents the chatbox from exceeding a specific height */
+  margin: 40px auto 0; /* Adds more margin to the top, moving it down */
+  border: none; /* Ensure no border is applied */
+  box-shadow: none; /* Remove any shadow effects */
+}
+
+
+
+/* Messages Section */
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  height: calc(100% - 60px); /* Adjust height considering input area */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Scrollbar Styling */
+.messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background: #dacbcb;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+/* Individual Message Styling */
+.message {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+  color: #000;
+}
+
+.message.user {
+  background-color: #dedbc9;
+  color: #000;
+  text-align: left;
+  margin-left: 0;
+}
+
+.message.bot {
+  background-color: #dea3a3;
+  color: #090800;
+  text-align: right;
+  margin-left: auto;
+}
+
+/* Display message prompting code in dashboard */
+.message.bot.dashboard {
+  background-color: #444;
+  color: #ffffff;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  padding-top: 5px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 12px;
+  background-color: #dacbcb;
+  color: #564d17;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  margin-top: 0;
+}
+
+button {
+  padding: 12px;
+  background-color: #efdf82;
+  color: #0e0101;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s ease;
+  margin-top: 0;
+}
+
+button:hover {
+  background-color: #ffc107;
+}
+
+/* Code Dashboard */
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px; /* Same padding as the chatbox */
+  background-color: #040118f2; /* Keep original color */
+  transition: width 0.3s ease;
+  overflow: hidden;
+  height: 80vh; /* Same height as chatbox */
+  max-height: 80vh; /* Prevents dashboard from exceeding the specific height */
+  border-radius: 10px;
+  margin: 40px auto 0; /* Adds same margin as chatbox to move it down */
+}
+
+
+/* Code Dashboard Title */
+.dashboard h2 {
+  color: white; /* Change the title color to white */
+}
+
+/* Scrollbar Styling for Dashboard */
+.dashboard::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+/* Close button for the dashboard */
+.close-button {
+  position: absolute;
+  top: 55px; /* Move it down by about 1/2 inch */
+  right: 20px; /* Move it to the left by about 1/2 inch */
+  background: transparent; /* Transparent background */
+  border: none;
+  color: white; /* White cross icon */
+  font-size: 20px; /* Cross icon size */
+  cursor: pointer;
+  padding: 2px 6px; /* Smaller button box */
+  border-radius: 5px; /* Slight border-radius */
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #ff3b3b; /* Red color on hover */
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+
+
+/* Code block inside the dashboard */
+.dashboard pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #dfb9b9;
+  border-radius: 8px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .dashboard {
+    max-width: 100%;
+    height: 50vh;
+  }
+
+  .chat-container {
+    padding: 10px;
+  }
+
+  .messages {
+    max-height: 50vh;
+  }
+}
+
+
+/* Title Styling */
+.page-title {
+  position: absolute;
+  top: 20px; /* Adjust to move the title up or down */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Title color */
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 20px;
+  z-index: 1000; /* Ensure it stays on top */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Optional font styling */
+}
+
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+.message-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.send-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
