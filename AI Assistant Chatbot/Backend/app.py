@@ -29,7 +29,7 @@ app = Flask(__name__)
 CORS(app, origins=["http://localhost:3000"]) 
 
 # Set up Tavily API key
-os.environ["TAVILY_API_KEY"] = "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"
+os.environ["TAVILY_API_KEY"] = ""
 from langchain_groq import ChatGroq
 from langchain_cohere import ChatCohere
 
@@ -38,7 +38,7 @@ os.environ["GROQ_API_KEY"] = os.getenv('GROQ_API_KEY')
 os.environ["GOOGLE_API_KEY"] = os.getenv('GOOGLE_API_KEY')
 os.environ["COHERE_API_KEY"] = os.getenv('COHERE_API_KEY')
 os.environ["TAVILY_API_KEY"] = os.getenv('TAVILY_API_KEY')
-llm1 = ChatGoogleGenerativeAI(model="gemini-1.5-pro",api_key="AIzaSyCDeq4zJ6Ut8mbwv-CbM5LeB6f3-111rGE")
+llm1 = ChatGoogleGenerativeAI(model="gemini-1.5-pro",api_key="")
 llm2 = ChatGroq(model="llama3-8b-8192")
 llm3 = ChatCohere(temperature=0.7,model="command-r-plus")
 
