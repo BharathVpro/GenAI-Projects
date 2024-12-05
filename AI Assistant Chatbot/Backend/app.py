@@ -4,6 +4,8 @@ import uuid
 import os
 import time
 import re
+from gpt_researcher import GPTResearcher
+import asyncio
 from langchain_core.messages import HumanMessage
 from langchain_core.tools import tool
 from langchain_openai import ChatOpenAI
@@ -101,6 +103,27 @@ def doc_reader(name: str, file: str) -> str:
     return retriever.invoke(name)
 
 
+@tool
+def gpt_researcher(query: str) -> str:   
+    async def fetch_report(query):
+        """
+        Fetch a research report based on the provided query and report type.
+        """
+        researcher = GPTResearcher(query=query)
+        await researcher.conduct_research()
+        report = await researcher.write_report()
+        return report
+
+    async def generate_research_report(query):
+        """
+        This is a sample script that executes an async main function to run a research report.
+        """
+        report = await fetch_report(query)
+        print(report)
+
+    if __name__ == "__main__":
+        QUERY = "What happened in the latest burning man floods?"
+        asyncio.run(generate_research_report(query=QUERY))
 
 @tool
 def process_video_and_describe(video_name: str, prompt: str) -> str:
@@ -121,7 +144,7 @@ memory = MemorySaver()
 model = llm2  # Use your preferred model settings
 agent = create_react_agent(
     model,
-    tools=[web_search, python_tool, process_video_and_describe, doc_reader],
+    tools=[web_search, python_tool, process_video_and_describe, doc_reader, gpt_researcher],
     checkpointer=memory,
     state_modifier=prompt,
 )
