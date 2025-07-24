@@ -36,13 +36,10 @@ from langchain_groq import ChatGroq
 from langchain_cohere import ChatCohere
 
 import os
-os.environ["GROQ_API_KEY"] = os.getenv('GROQ_API_KEY')
 os.environ["GOOGLE_API_KEY"] = os.getenv('GOOGLE_API_KEY')
 os.environ["COHERE_API_KEY"] = os.getenv('COHERE_API_KEY')
 os.environ["TAVILY_API_KEY"] = os.getenv('TAVILY_API_KEY')
-llm1 = ChatGoogleGenerativeAI(model="gemini-1.5-pro",api_key="")
-llm2 = ChatGroq(model="llama3-8b-8192")
-llm3 = ChatCohere(temperature=0.7,model="command-r-plus")
+llm1 = ChatGoogleGenerativeAI(model="gemini-1.5-pro")
 
 prompt = ChatPromptTemplate.from_messages(
     [
