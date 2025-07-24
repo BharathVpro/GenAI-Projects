@@ -45,8 +45,6 @@ from langgraph.prebuilt import create_react_agent
 from langchain_openai import ChatOpenAI
 from langgraph.checkpoint.mongodb import MongoDBSaver
 
-MONGODB_URI = "mongodb+srv://b61013740:nPEnQS5XBZ5xSofh@cluster0.eklcy.mongodb.net/"  
-
 app = FastAPI()
 
 # Allow all origins (adjust for production as needed)
