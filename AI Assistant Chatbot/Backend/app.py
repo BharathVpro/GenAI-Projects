@@ -39,7 +39,7 @@ import os
 os.environ["GOOGLE_API_KEY"] = os.getenv('GOOGLE_API_KEY')
 os.environ["COHERE_API_KEY"] = os.getenv('COHERE_API_KEY')
 os.environ["TAVILY_API_KEY"] = os.getenv('TAVILY_API_KEY')
-llm1 = ChatGoogleGenerativeAI(model="gemini-1.5-pro")
+llm1 = ChatGoogleGenerativeAI(model="gemini-2.5-pro")
 
 prompt = ChatPromptTemplate.from_messages(
     [
