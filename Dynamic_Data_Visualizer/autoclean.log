@@ -1,0 +1,21 @@
+20-01-2025 20:03:55.71 - INFO - Started validation of input parameters...
+20-01-2025 20:03:55.71 - INFO - Completed validation of input parameters
+20-01-2025 20:03:55.71 - INFO - Started handling of duplicates... Method: "AUTO"
+20-01-2025 20:03:55.71 - DEBUG - 0 missing values found
+20-01-2025 20:03:55.71 - INFO - Completed handling of duplicates in 0.00421 seconds
+20-01-2025 20:03:55.71 - INFO - Started handling of missing values...
+20-01-2025 20:03:55.71 - INFO - Found a total of 1174 missing value(s)
+20-01-2025 20:03:55.71 - INFO - Started handling of NUMERICAL missing values... Method: "AUTO"
+20-01-2025 20:03:55.74 - WARNING - LINREG imputation failed for feature "RFICDTC"
+20-01-2025 20:03:55.76 - WARNING - KNN imputation failed for feature "RFICDTC"
+20-01-2025 20:03:55.76 - DEBUG - KNN imputation of 52 value(s) succeeded for feature "DMDY"
+20-01-2025 20:03:55.77 - INFO - Started handling of CATEGORICAL missing values... Method: "AUTO"
+20-01-2025 20:03:55.85 - DEBUG - KNN imputation of 52 value(s) succeeded for feature "RFSTDTC"
+20-01-2025 20:03:55.86 - DEBUG - KNN imputation of 52 value(s) succeeded for feature "RFENDTC"
+20-01-2025 20:03:55.86 - DEBUG - KNN imputation of 52 value(s) succeeded for feature "RFXSTDTC"
+20-01-2025 20:03:55.87 - DEBUG - KNN imputation of 54 value(s) succeeded for feature "RFXENDTC"
+20-01-2025 20:03:55.87 - DEBUG - KNN imputation of 303 value(s) succeeded for feature "DTHDTC"
+20-01-2025 20:03:55.88 - DEBUG - KNN imputation of 303 value(s) succeeded for feature "DTHFL"
+20-01-2025 20:03:55.88 - INFO - Completed handling of missing values in 0.166806 seconds
+20-01-2025 20:03:55.88 - INFO - Started handling of outliers... Method: "WINZ"
+20-01-2025 20:03:55.88 - DEBUG - Outlier imputation of 5 value(s) succeeded for feature "AGE"
